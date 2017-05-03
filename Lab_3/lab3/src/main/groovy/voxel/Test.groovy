@@ -16,11 +16,11 @@ public class Test {
 
 	public static void main(String[] args) {
 
-		Model model = fileTest("Engine.raw", 0.0f, 1.0f, [256,256,256], false, false)
+		//Model model = fileTest("Engine.raw", 0.0f, 1.0f, [256,256,256], false, false)
 
-		//Model model = fileTest("tomato.raw", 0.0f, 1.0f, [256,256,64], false, false)
+		//Model model = fileTest("Tomato.raw", 0.0f, 1.0f, [256,256,64], false, false)
 
-		//Model model = fileTest("present.dat", 0.0f, 1.0f, [246,246,221], true, true)
+		Model model = fileTest("present.dat", 0.0f, 1.0f, [246,246,221], true, true)
 
 		//Model model = fileTest("nucleon.raw", 0.0f, 1.0f, [41,41,41], false, false)
 

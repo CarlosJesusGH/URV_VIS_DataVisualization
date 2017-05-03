@@ -42,7 +42,31 @@ public class Model {
 	  
 	  public int getBlankPercent() {
 		  return (freqVmin*100)/(resX*resY*resZ)
-	  }	  
+	  }
+
+	  public void generateHistogram() {
+
+		for (int i = 0; i < resX; i++)
+			for (int j = 0; j < resY; j++)
+				for (int k = 0; k < resZ; k++) {
+
+					histogram[this.voxels[i][j][k]]++
+					if (voxels[i][j][k] < minHist)
+						minHist = voxels[i][j][k]
+					if (voxels[i][j][k] > maxHist)
+						maxHist = voxels[i][j][k]
+					if (voxels[i][j][k] == 0)
+						freqVmin++
+
+				}
+
+		//for (int i = 0 i < histogram.length i++)
+		//	System.out.println("Property value(" + i + ") -> " + histogram[i])
+
+		System.out.println("Histogram max(" + maxHist + ") min(" + minHist
+				+ ") blank(" + getBlankPercent() + "%)")
+
+	  }
 		  	  
 	  public boolean loadFromFile(File file, List res, boolean is16bits, boolean hasHeader) {
 		  
@@ -52,20 +76,41 @@ public class Model {
 		  
 		  voxels = new int[resX][resY][resZ]
 		  histogram=new int[(is16bits)?65531:256]
-		  
+
 		  try {
 			  
 			DataInputStream dis = new DataInputStream (new FileInputStream(file))
 			
 			//HINT : (dis.readUnsignedByte() << 8) | dis.readUnsignedByte() 
-						
+
 			if (hasHeader) {
-				//TODO IMPLEMENT THIS	
+				//TODO IMPLEMENT THIS
+
+				dis.readUnsignedByte()
+				dis.readUnsignedByte()
+				dis.readUnsignedByte()
+//				dis.readUnsignedByte()
+//				dis.readUnsignedByte()
+//				dis.readUnsignedByte()
+//				dis.readUnsignedByte()
+				println("available: " + dis.available())
+
 				System.out.println("Dimensions : ("+resX+","+resY+","+resZ+")")
 			}
 			
 			//TODO IMPLEMENT THIS
-			
+		    for (int i=0; i<resX; i++)
+			    for (int j=0; j<resY; j++)
+				    for (int k=0; k<resZ; k++) {
+						if(is16bits) {
+							int b1 = dis.readUnsignedByte() << 8
+							int b2 = dis.readUnsignedByte()
+							voxels[i][j][k] = b1 | b2
+						} else
+							voxels[i][j][k] = dis.readUnsignedByte()
+					}
+
+			println("available: " + dis.available())
 			dis.close()
 			
 		 
