@@ -16,19 +16,19 @@ public class Test {
 
 	public static void main(String[] args) {
 
-		// GOOD
+		// GOOD. Although, is not showing the same it says in the guide (it did before, why now it's not?)
 		Model model = fileTest("Engine.raw", 0.0f, 1.0f, [256,256,256], false, false)
 
-		// TODO: BAD, I don't know why, it should be the same than others 8 bits.
+		// GOOD
 		//Model model = fileTest("Tomato.raw", 0.0f, 1.0f, [256,256,64], false, false)
 
-		// TODO: BAD, maybe I'm reading 16 bits in a wrong way.
+		// GOOD
 		//Model model = fileTest("present.dat", 0.0f, 1.0f, [246,246,221], true, true)
 
 		// GOOD
 		//Model model = fileTest("nucleon.raw", 0.0f, 1.0f, [41,41,41], false, false)
 
-		// SEEMS GOOD, but I'm not sure.
+		// GOOD
 		//Model model = fileTest("marschnerlobb.raw", 0.0f, 1.0f, [41,41,41], false, false)
 
 		// GOOD

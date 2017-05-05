@@ -16,6 +16,11 @@ And following these objectives :
 
 Indeed, this first session is just an introduction, in order to take a first look of foundations that we will need in the first part of this course.
 
+    NOTES:
+        To run the project from terminal just do:
+        gradle compileGroovy
+        gradle run
+
 
 SESSION/LAB 2
 =============
@@ -82,3 +87,6 @@ https://moodle.urv.cat/moodle/mod/forum/discuss.php?d=353174
 
     Notes:
         Marching squares explanation: https://www.youtube.com/watch?v=6ovo5b6vLKA
+        Marching squares wiki: https://en.wikipedia.org/wiki/Marching_squares
+        Marching cubes wiki: https://en.wikipedia.org/wiki/Marching_cubes
+        

@@ -85,35 +85,33 @@ public class Model {
 
 			if (hasHeader) {
 				//TODO IMPLEMENT THIS
-
-				dis.readUnsignedByte()
-				dis.readUnsignedByte()
-				dis.readUnsignedByte()
-//				dis.readUnsignedByte()
-//				dis.readUnsignedByte()
-//				dis.readUnsignedByte()
-//				dis.readUnsignedByte()
-				println("available: " + dis.available())
-
+				if (is16bits) {
+					resX=dis.readUnsignedByte()
+					if (is16bits) resX = (dis.readUnsignedByte() << 8) | resX
+					resY=dis.readUnsignedByte()
+					if (is16bits) resY = (dis.readUnsignedByte() << 8) | resY
+					resZ=dis.readUnsignedByte()
+					if (is16bits) resZ = (dis.readUnsignedByte() << 8) | resZ
+				}
 				System.out.println("Dimensions : ("+resX+","+resY+","+resZ+")")
 			}
 			
 			//TODO IMPLEMENT THIS
-		    for (int i=0; i<resX; i++)
-			    for (int j=0; j<resY; j++)
-				    for (int k=0; k<resZ; k++) {
-						if(is16bits) {
-							int b1 = dis.readUnsignedByte() << 8
-							int b2 = dis.readUnsignedByte()
-							voxels[i][j][k] = b1 | b2
-						} else
-							voxels[i][j][k] = dis.readUnsignedByte()
-					}
+			  for (int k=0; k<resZ; k++){
 
-			println("available: " + dis.available())
-			dis.close()
-			
-		 
+				  for (int i=0; i<resX; i++) {
+					  for (int j=0; j<resY; j++) {
+
+						  voxels[i][j][k]=dis.readUnsignedByte()
+						  if (is16bits) voxels[i][j][k] = (dis.readUnsignedByte() << 8) | voxels[i][j][k]
+						  //if (is16bits) dis.readUnsignedByte()
+					  }
+				  }
+			  }
+
+			  println("available: " + dis.available())
+			  dis.close()
+
 			} catch (Exception e) {
 				e.printStackTrace()
 				return false
