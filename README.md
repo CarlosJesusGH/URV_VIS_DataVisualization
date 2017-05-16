@@ -1,5 +1,5 @@
-SESSION/LAB 1
-=============
+SESSION 1/LAB 1
+===============
 
 This week we will start working with OpenGL, using these resources :
 1.1 Introduction to Computer Graphics
@@ -22,8 +22,8 @@ Indeed, this first session is just an introduction, in order to take a first loo
         gradle run
 
 
-SESSION/LAB 2
-=============
+SESSION 2/LAB 2
+===============
 
 This second week we will study the first topic of SciVis, starting with the data volumes :
 
@@ -41,8 +41,8 @@ The objectives of this session are :
 In addition, in this session we will introduce the first lab exercise, that can be done during the one hour of class.
 
 
-SESSION/LAB 3
-=============
+SESSION 3/LAB 3
+===============
 
 This third week we will continue the first topic of SciVis, the data volumes :
 
@@ -58,8 +58,8 @@ The objectives of this session are :
     ?-Understand the Transfer function
 
 
-SESSION/LAB 4
-=============
+SESSION 4/LAB 4
+===============
 
 Dear Students,
 
@@ -86,7 +86,65 @@ And the forum thread for this Global Practise 1 :
 https://moodle.urv.cat/moodle/mod/forum/discuss.php?d=353174
 
     Notes:
-        Marching squares explanation: https://www.youtube.com/watch?v=6ovo5b6vLKA
-        Marching squares wiki: https://en.wikipedia.org/wiki/Marching_squares
-        Marching cubes wiki: https://en.wikipedia.org/wiki/Marching_cubes
+        -Marching squares explanation: https://www.youtube.com/watch?v=6ovo5b6vLKA
+        -Marching squares wiki: https://en.wikipedia.org/wiki/Marching_squares
+        -Marching cubes wiki: https://en.wikipedia.org/wiki/Marching_cubes
         
+    Questions:
+        -What is that we need to do in the lab session?
+        -What does it mean "extend this OpenGL code in order to recollect the outstanding information"?
+        -When is performed the compression? (calculate ... the % of void voxels before and after the compression).
+
+SESSION 5/LAB 5
+===============
+
+Dear Students,
+
+This week we will finish with the SciVis part with this last topic, direct visualisation :
+
+    2.3 Data Visualisation
+    Lab Guide (updated)
+
+The objectives of this session are :
+
+    Learn the ray tracing algorithm
+    Learn the projective methods 
+
+In addition, in this fifth lab session we will work the second lab exercise. The delivery task is now available to upload your report : 
+https://moodle.urv.cat/moodle/mod/assign/view.php?id=1859860
+Any questions about this exercise will be attended in its own thread : 
+https://moodle.urv.cat/moodle/mod/forum/discuss.php?d=354089
+Finally, check the latest updates in the Support Material, with a set of short videos showing the most important concepts in this course.
+
+    Notes:
+        -Ray tracing algorithm wiki: https://en.wikipedia.org/wiki/Ray_tracing_(graphics)
+            --In computer graphics, ray tracing is a technique for generating an image by tracing the path of light through pixels in an image plane and simulating the effects of its encounters with virtual objects.
+            --The ray tracing algorithm builds an image by extending rays into a scene.
+            --For each sample we calculate: the property value, the gradient, colour it deserves, composition samples.
+        -Here some nice videos explaining Ray tracing algorithm:
+            --https://www.youtube.com/watch?v=H-CMDCmehy4
+            --https://www.youtube.com/watch?v=bN8AV_x4BXI
+        -Z-buffering wiki: https://en.wikipedia.org/wiki/Z-buffering
+            --The Z letter in Z-buffering means the distance from the camera point of view until the point in every pixel.
+            --The Buffer word in Z-buffering means the array of distances onw for every pixel in the screen.
+        -Here some nice videos explaning de Z-buffer method:
+            --https://www.youtube.com/watch?v=yhwg_O5HBwQ            
+            --https://www.youtube.com/watch?v=L6U746cO-yQ
+        -Projective methods are based on adapting the algorithm Z-Buffer technique. 
+        -Some examples of projective methods are:
+            --Sorted iteration - ?
+            --Splatting. link: https://en.wikipedia.org/wiki/Volume_rendering#Splatting - ? not sure how it works ? 
+        -About the colors, check:
+            --Transfer function - ?
+            --Probabilistic models: The colour of a given point is weighted according to the colours of different tissues considering the probability that the point of this material was.
+        -Very important about ray composition:
+            --Each ray takes a set of samples
+            --Each sample calculates:
+            --•the property value
+            --•gradient
+            --•colour it deserves
+            --•composition samples
+        -Different models of colour composition:
+            --MIP (maximum colour value)
+            --FTB (front to back)
+            --BTF (back to front)
