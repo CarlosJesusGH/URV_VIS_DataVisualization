@@ -89,6 +89,7 @@ https://moodle.urv.cat/moodle/mod/forum/discuss.php?d=353174
         -Marching squares explanation: https://www.youtube.com/watch?v=6ovo5b6vLKA
         -Marching squares wiki: https://en.wikipedia.org/wiki/Marching_squares
         -Marching cubes wiki: https://en.wikipedia.org/wiki/Marching_cubes
+        -Dividing cubes video: https://www.youtube.com/watch?v=-WZfdmrADR4
         
     Questions:
         -What is that we need to do in the lab session?
@@ -135,7 +136,7 @@ Finally, check the latest updates in the Support Material, with a set of short v
             --Sorted iteration - ?
             --Splatting. link: https://en.wikipedia.org/wiki/Volume_rendering#Splatting - ? not sure how it works ? 
         -About the colors, check:
-            --Transfer function - ?
+            --Transfer function - Great explanation in this class, last 10 minutes (including marching squares and some other definitions) https://www.youtube.com/watch?v=FYAJQgYdeqQ&index=9&list=PLZo40sVmw_4N70yhFIiy_SbOs0cubfLJn
             --Probabilistic models: The colour of a given point is weighted according to the colours of different tissues considering the probability that the point of this material was.
         -Very important about ray composition:
             --Each ray takes a set of samples

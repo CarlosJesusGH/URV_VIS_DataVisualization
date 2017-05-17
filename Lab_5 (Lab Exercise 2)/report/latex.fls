@@ -1,0 +1,167 @@
+PWD /home/cj/Dropbox/Personal/Study/MasterURV/2nd_Semester/VIS/Lab_Sessions/Lab_5/report
+INPUT /etc/texmf/web2c/texmf.cnf
+INPUT /usr/share/texmf/web2c/texmf.cnf
+INPUT /usr/share/texlive/texmf-dist/web2c/texmf.cnf
+INPUT /var/lib/texmf/web2c/pdftex/pdflatex.fmt
+INPUT /home/cj/Dropbox/Personal/Study/MasterURV/2nd_Semester/VIS/Lab_Sessions/Lab_5/report/latex.tex
+OUTPUT /home/cj/Dropbox/Personal/Study/MasterURV/2nd_Semester/VIS/Lab_Sessions/Lab_5/report/latex.log
+INPUT /usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+INPUT /usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+INPUT /usr/share/texlive/texmf-dist/tex/latex/base/size10.clo
+INPUT /usr/share/texlive/texmf-dist/tex/latex/base/size10.clo
+INPUT /usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/base/utf8.def
+INPUT /usr/share/texlive/texmf-dist/tex/latex/base/utf8.def
+INPUT /usr/share/texlive/texmf-dist/tex/latex/base/t1enc.dfu
+INPUT /usr/share/texlive/texmf-dist/tex/latex/base/t1enc.dfu
+INPUT /usr/share/texlive/texmf-dist/tex/latex/base/ot1enc.dfu
+INPUT /usr/share/texlive/texmf-dist/tex/latex/base/ot1enc.dfu
+INPUT /usr/share/texlive/texmf-dist/tex/latex/base/omsenc.dfu
+INPUT /usr/share/texlive/texmf-dist/tex/latex/base/omsenc.dfu
+INPUT /usr/share/texlive/texmf-dist/tex/latex/float/float.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/float/float.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/latexconfig/graphics.cfg
+INPUT /usr/share/texlive/texmf-dist/tex/latex/latexconfig/graphics.cfg
+INPUT /usr/share/texlive/texmf-dist/tex/latex/pdftex-def/pdftex.def
+INPUT /usr/share/texlive/texmf-dist/tex/latex/pdftex-def/pdftex.def
+INPUT /usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+INPUT /usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+INPUT /usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+INPUT /usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/url/url.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/url/url.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
+INPUT /usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
+INPUT /usr/share/texlive/texmf-dist/tex/latex/subfig/subfig.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/subfig/subfig.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
+INPUT /home/cj/Dropbox/Personal/Study/MasterURV/2nd_Semester/VIS/Lab_Sessions/Lab_5/report/latex.aux
+INPUT /home/cj/Dropbox/Personal/Study/MasterURV/2nd_Semester/VIS/Lab_Sessions/Lab_5/report/latex.aux
+OUTPUT /home/cj/Dropbox/Personal/Study/MasterURV/2nd_Semester/VIS/Lab_Sessions/Lab_5/report/latex.aux
+INPUT /usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
+INPUT /usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
+INPUT /usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+INPUT /usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+INPUT /usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+INPUT /usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+INPUT /usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+INPUT /usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
+INPUT /usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
+INPUT /usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+INPUT /usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+INPUT /usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+INPUT /usr/share/texlive/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+INPUT /usr/share/texlive/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+INPUT /usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+INPUT /usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr17.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr12.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr8.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr6.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmmi12.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmmi8.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmmi6.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmsy8.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmsy6.tfm
+OUTPUT /home/cj/Dropbox/Personal/Study/MasterURV/2nd_Semester/VIS/Lab_Sessions/Lab_5/report/latex.pdf
+INPUT /var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr12.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
+INPUT /home/cj/Dropbox/Personal/Study/MasterURV/2nd_Semester/VIS/Lab_Sessions/Lab_5/report/latex.toc
+INPUT /home/cj/Dropbox/Personal/Study/MasterURV/2nd_Semester/VIS/Lab_Sessions/Lab_5/report/latex.toc
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm
+OUTPUT /home/cj/Dropbox/Personal/Study/MasterURV/2nd_Semester/VIS/Lab_Sessions/Lab_5/report/latex.toc
+INPUT /usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
+INPUT /usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
+INPUT /home/cj/Pictures/Screenshot from 2017-05-17 13-08-30.png
+INPUT /home/cj/Pictures/Screenshot from 2017-05-17 13-08-30.png
+INPUT /home/cj/Pictures/Screenshot from 2017-05-17 13-08-30.png
+INPUT /home/cj/Pictures/010_Executing ParaView from terminal.png
+INPUT /home/cj/Pictures/010_Executing ParaView from terminal.png
+INPUT /home/cj/Pictures/010_Executing ParaView from terminal.png
+INPUT /home/cj/Pictures/020_ParaView right after openning.png
+INPUT /home/cj/Pictures/020_ParaView right after openning.png
+INPUT /home/cj/Pictures/020_ParaView right after openning.png
+INPUT /home/cj/Pictures/030_Engine, open raw file.png
+INPUT /home/cj/Pictures/030_Engine, open raw file.png
+INPUT /home/cj/Pictures/030_Engine, open raw file.png
+INPUT /home/cj/Pictures/040_Engine, Open Data With.png
+INPUT /home/cj/Pictures/040_Engine, Open Data With.png
+INPUT /home/cj/Pictures/040_Engine, Open Data With.png
+INPUT /home/cj/Pictures/050_Engine, detailed values from slides.png
+INPUT /home/cj/Pictures/050_Engine, detailed values from slides.png
+INPUT /home/cj/Pictures/050_Engine, detailed values from slides.png
+INPUT /home/cj/Pictures/060_Engine, 3D view settings.png
+INPUT /home/cj/Pictures/060_Engine, 3D view settings.png
+INPUT /home/cj/Pictures/060_Engine, 3D view settings.png
+INPUT /home/cj/Pictures/100_Engine, 3D view (0).png
+INPUT /home/cj/Pictures/100_Engine, 3D view (0).png
+INPUT /home/cj/Pictures/100_Engine, 3D view (0).png
+INPUT /home/cj/Pictures/070_Engine, 3D view (1).png
+INPUT /home/cj/Pictures/070_Engine, 3D view (1).png
+INPUT /home/cj/Pictures/070_Engine, 3D view (1).png
+INPUT /home/cj/Pictures/080_Engine, 3D view (2).png
+INPUT /home/cj/Pictures/080_Engine, 3D view (2).png
+INPUT /home/cj/Pictures/080_Engine, 3D view (2).png
+INPUT /home/cj/Pictures/090_Engine, 3D view (3).png
+INPUT /home/cj/Pictures/090_Engine, 3D view (3).png
+INPUT /home/cj/Pictures/090_Engine, 3D view (3).png
+INPUT /home/cj/Pictures/110_Tomato, open raw file.png
+INPUT /home/cj/Pictures/110_Tomato, open raw file.png
+INPUT /home/cj/Pictures/110_Tomato, open raw file.png
+INPUT /home/cj/Pictures/120_Tomato, Open Data With.png
+INPUT /home/cj/Pictures/120_Tomato, Open Data With.png
+INPUT /home/cj/Pictures/120_Tomato, Open Data With.png
+INPUT /home/cj/Pictures/170_Tomato, detailed values from slides.png
+INPUT /home/cj/Pictures/170_Tomato, detailed values from slides.png
+INPUT /home/cj/Pictures/170_Tomato, detailed values from slides.png
+INPUT /home/cj/Pictures/160_Tomato, 3D view settings.png
+INPUT /home/cj/Pictures/160_Tomato, 3D view settings.png
+INPUT /home/cj/Pictures/160_Tomato, 3D view settings.png
+INPUT /home/cj/Pictures/130_Tomato, 3D view (1).png
+INPUT /home/cj/Pictures/130_Tomato, 3D view (1).png
+INPUT /home/cj/Pictures/130_Tomato, 3D view (1).png
+INPUT /home/cj/Pictures/140_Tomato, 3D view (2).png
+INPUT /home/cj/Pictures/140_Tomato, 3D view (2).png
+INPUT /home/cj/Pictures/140_Tomato, 3D view (2).png
+INPUT /home/cj/Pictures/150_Tomato, 3D view (3).png
+INPUT /home/cj/Pictures/150_Tomato, 3D view (3).png
+INPUT /home/cj/Pictures/150_Tomato, 3D view (3).png
+INPUT /home/cj/Pictures/Screenshot from 2017-05-17 13-36-56.png
+INPUT /home/cj/Pictures/Screenshot from 2017-05-17 13-36-56.png
+INPUT /home/cj/Pictures/Screenshot from 2017-05-17 13-36-56.png
+INPUT /home/cj/Dropbox/Personal/Study/MasterURV/2nd_Semester/VIS/Lab_Sessions/Lab_5/report/latex.bbl
+INPUT /home/cj/Dropbox/Personal/Study/MasterURV/2nd_Semester/VIS/Lab_Sessions/Lab_5/report/latex.bbl
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmtt10.tfm
+INPUT /home/cj/Dropbox/Personal/Study/MasterURV/2nd_Semester/VIS/Lab_Sessions/Lab_5/report/latex.aux
+INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
+INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
+INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb
+INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb
+INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb
+INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
+INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb

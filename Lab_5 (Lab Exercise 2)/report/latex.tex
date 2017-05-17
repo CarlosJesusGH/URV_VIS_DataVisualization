@@ -1,0 +1,260 @@
+% Atom auto build latex -> Ctrl+Alt+B
+% Atom check spelling Ctrl+:
+% To use latex python scripts: cd ~/Dropbox/GeekFiles/Latex/ && source ~/Coding/venv/bin/activate
+
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{float}
+\usepackage[pdftex]{graphicx}
+\usepackage{url}
+\usepackage{listings}               % Code type bash
+\usepackage{subfig}                 % Images in a row
+
+\title{VIS - Second Lab Exercise \\ \bigskip Vis Tools}
+\author{\\ Carlos García}
+\date{May 2017}
+
+\begin{document}
+\maketitle \newpage \tableofcontents \newpage
+% ------------------------------------------------------------------------------
+\section{Introduction}
+  The idea of this exercise is to have first contact and get familiar with a real tool used to visualize volumes and data.
+  This tool can be ParaView or VolView depending on our choice, and the data to visualize can be one from the models used in the previous laboratory sessions, this can be: Engine, Tomato, or Present.
+
+% ------------------------------------------------------------------------------
+\section{Selecting the best tool}
+  The first decision we must make is what tool to use, the choices are ParaView and VolView, after reading some posts and checking some websites I made my decision using this criteria:
+
+  \begin{itemize}
+    \item Comments from other users: Maybe the most outstanding comments I found about this comparison were \cite{website:paraview_vs_volview}:
+    \begin{itemize}
+      \item "One thing I noticed is that ParaView has seen several recent updates. Whereas, VolView seems to not have been updated in a while. Also, ParaView is running on VTK 6.0. Looks like VolView is still on VTK 5.0. And of course, the UI looks much better on ParaView than on VolView. Looks like both use the same renderers for volume rendering."
+      \item "If you want to do 3D volume rendering, especially with medical images, then VolView might be a good start. If you want to do scientific visualization using a variety of data representations, then Paraview is the one. Also, Paraview is under active development. I'm not sure about the status of VolView."
+    \end{itemize}
+    \item Information on Wikipedia:
+    \begin{itemize}
+      \item ParaView: The information is very complete \cite{wiki:paraview}.
+      \item Volview: There is no page on Wikipedia or I couldn't find it.
+    \end{itemize}
+    \item Official website:
+    \begin{itemize}
+      \item ParaView: Seems nice and complete \cite{website:paraview_official}.
+      \item VolView: Seems good enough \cite{website:volview_official}.
+    \end{itemize}
+    \item Guides and tutorials:
+    \begin{itemize}
+      \item ParaView: Seems good enough, at least for beginners \cite{website:paraview_tuto}.
+      \item VolView: Not enough information \cite{website:volview_tuto}.
+    \end{itemize}
+  \end{itemize}
+
+Finally, I think that ParaView has a better review in several places, so I will go with this option.
+
+% ------------------------------------------------------------------------------
+\section{Installing and executing ParaView}
+To download ParaView we only need to go to the official website and click on download and then select the version, type of download, operating system and file to download, depending on your needs:
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=1 \textwidth]{"/home/cj/Pictures/Screenshot from 2017-05-17 13-08-30"}
+  \caption{ParaView download}
+  \label{}
+\end{figure}
+
+Once downloaded, we only need to extract the files, go to the new bin directory and execute the "paraview" script:
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=1 \textwidth]{"/home/cj/Pictures/010_Executing ParaView from terminal"}
+  \caption{Executing ParaView from terminal}
+  \label{}
+\end{figure}
+
+\break
+Then, this is how ParaView looks right after opening the software:
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=1 \textwidth]{"/home/cj/Pictures/020_ParaView right after openning"}
+  \caption{ParaView right after opening}
+  \label{}
+\end{figure}
+
+Now, let us try to check out the raw data files.
+% ------------------------------------------------------------------------------
+\newpage
+\section{Viewing Engine.raw}
+
+Engine, open raw file
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=1 \textwidth]{"/home/cj/Pictures/030_Engine, open raw file"}
+  \caption{Engine, open raw file}
+  \label{}
+\end{figure}
+
+
+Engine, Open Data With
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=1 \textwidth]{"/home/cj/Pictures/040_Engine, Open Data With"}
+  \caption{Engine, Open Data With}
+  \label{}
+\end{figure}
+
+\break
+Engine, detailed values from slides, this values will be set in ParaView so it can understand the data inside the raw file.
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=1 \textwidth]{"/home/cj/Pictures/050_Engine, detailed values from slides"}
+  \caption{Engine, detailed values from slides}
+  \label{}
+\end{figure}
+
+\break
+Engine, 3D view settings
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=1 \textwidth]{"/home/cj/Pictures/060_Engine, 3D view settings"}
+  \caption{Engine, 3D view settings}
+  \label{}
+\end{figure}
+
+\break
+Engine, 3D view when only "Outline" is configured in the "Representation type", then we must go there and change it to "Volume"
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=1 \textwidth]{"/home/cj/Pictures/100_Engine, 3D view (0)"}
+  \caption{Engine, 3D view (0)}
+  \label{}
+\end{figure}
+
+Engine, 3D view (1)
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=1 \textwidth]{"/home/cj/Pictures/070_Engine, 3D view (1)"}
+  \caption{Engine, 3D view (1)}
+  \label{}
+\end{figure}
+
+\break
+Engine, 3D view (2)
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=1 \textwidth]{"/home/cj/Pictures/080_Engine, 3D view (2)"}
+  \caption{Engine, 3D view (2)}
+  \label{}
+\end{figure}
+
+
+Engine, 3D view (3)
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=1 \textwidth]{"/home/cj/Pictures/090_Engine, 3D view (3)"}
+  \caption{Engine, 3D view (3)}
+  \label{}
+\end{figure}
+
+% ------------------------------------------------------------------------------
+\newpage
+\section{Viewing Tomato.raw}
+Tomato, open raw file
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=1 \textwidth]{"/home/cj/Pictures/110_Tomato, open raw file"}
+  \caption{Tomato, open raw file}
+  \label{}
+\end{figure}
+
+
+Tomato, Open Data With
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=1 \textwidth]{"/home/cj/Pictures/120_Tomato, Open Data With"}
+  \caption{Tomato, Open Data With}
+  \label{}
+\end{figure}
+
+\break
+Tomato, detailed values from slides
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=1 \textwidth]{"/home/cj/Pictures/170_Tomato, detailed values from slides"}
+  \caption{Tomato, detailed values from slides}
+  \label{}
+\end{figure}
+
+\break
+Tomato, 3D view settings
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=1 \textwidth]{"/home/cj/Pictures/160_Tomato, 3D view settings"}
+  \caption{Tomato, 3D view settings}
+  \label{}
+\end{figure}
+
+\break
+Tomato, 3D view (1)
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=1 \textwidth]{"/home/cj/Pictures/130_Tomato, 3D view (1)"}
+  \caption{Tomato, 3D view (1)}
+  \label{}
+\end{figure}
+
+
+Tomato, 3D view (2)
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=1 \textwidth]{"/home/cj/Pictures/140_Tomato, 3D view (2)"}
+  \caption{Tomato, 3D view (2)}
+  \label{}
+\end{figure}
+
+\break
+Tomato, 3D view (3)
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=1 \textwidth]{"/home/cj/Pictures/150_Tomato, 3D view (3)"}
+  \caption{Tomato, 3D view (3)}
+  \label{}
+\end{figure}
+
+% ------------------------------------------------------------------------------
+\newpage
+\section{Viewing Present.dat}
+  Finally, I tried to open the file Present.dat as well, but I found some problems, maybe related to this information found in a post \cite{website:paraview_dat_problem}
+
+  "ParaView has not full support for Fluent files (cas + dat). It doesn't see all the variables (at least in versions up to 5.0.1 RC2 that I use, although I know that I should update to 5.2 or 5.3)."
+
+  I'm using the last version, but, I'm also having similar problems:
+
+  \begin{figure}[H]
+    \centering
+    \includegraphics[width=1 \textwidth]{"/home/cj/Pictures/Screenshot from 2017-05-17 13-36-56"}
+    \caption{Some of the problems found while opening a dat file}
+  \end{figure}
+
+% ------------------------------------------------------------------------------
+\newpage
+\bibliographystyle{unsrt}   %unsrt by appearance
+% Create also a file in this folder called "references.bib" and can paste the latex info as Wikipedia use them in "Cite this page" section.
+\bibliography{references}
+% ------------------------------------------------------------------------------
+\end{thebibliography}
+\end{document}

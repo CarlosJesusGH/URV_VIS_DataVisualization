@@ -1,0 +1,40 @@
+\begin{thebibliography}{1}
+
+\bibitem{website:paraview_vs_volview}
+{ParaView vs VolView}.
+\newblock
+  \url{http://vtk.1045678.n5.nabble.com/ParaView-vs-VolView-td5723772.html}.
+\newblock [Online; accessed 16-May-2017].
+
+\bibitem{wiki:paraview}
+Wikipedia.
+\newblock Paraview --- wikipedia{,} the free encyclopedia, 2017.
+\newblock [Online; accessed 17-May-2017].
+
+\bibitem{website:paraview_official}
+{ParaView website}.
+\newblock \url{http://www.paraview.org/}.
+\newblock [Online; accessed 16-May-2017].
+
+\bibitem{website:volview_official}
+{VolView website}.
+\newblock \url{https://www.kitware.com/volview/}.
+\newblock [Online; accessed 16-May-2017].
+
+\bibitem{website:paraview_tuto}
+{ParaView Tutorials}.
+\newblock \url{http://www.paraview.org/tutorials/}.
+\newblock [Online; accessed 16-May-2017].
+
+\bibitem{website:volview_tuto}
+{VolView Tutorials}.
+\newblock \url{https://www.kitware.com/what-we-offer/#training}.
+\newblock [Online; accessed 16-May-2017].
+
+\bibitem{website:paraview_dat_problem}
+{ParaView problem working with dat files}.
+\newblock
+  \url{http://www.paraview.org/pipermail/paraview/2017-March/039664.html}.
+\newblock [Online; accessed 16-May-2017].
+
+\end{thebibliography}
