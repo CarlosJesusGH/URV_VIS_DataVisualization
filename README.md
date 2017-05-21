@@ -119,9 +119,12 @@ Finally, check the latest updates in the Support Material, with a set of short v
 
     Notes:
         -Ray tracing algorithm wiki: https://en.wikipedia.org/wiki/Ray_tracing_(graphics)
+            --Very good explanatory video about Ray Tracing: https://www.youtube.com/watch?v=Ahp6LDQnK4Y
             --In computer graphics, ray tracing is a technique for generating an image by tracing the path of light through pixels in an image plane and simulating the effects of its encounters with virtual objects.
             --The ray tracing algorithm builds an image by extending rays into a scene.
             --For each sample we calculate: the property value, the gradient, colour it deserves, composition samples.
+            --PovRay is a free software to render images using Ray Tracing, check a video using it: https://www.youtube.com/watch?v=WZrY32jSjvU
+            --A guy writing a Ray Tracer in 30 minutes using only C++: https://www.youtube.com/watch?v=ARn_yhgk7aE
         -Here some nice videos explaining Ray tracing algorithm:
             --https://www.youtube.com/watch?v=H-CMDCmehy4
             --https://www.youtube.com/watch?v=bN8AV_x4BXI
@@ -136,7 +139,9 @@ Finally, check the latest updates in the Support Material, with a set of short v
             --Sorted iteration - ?
             --Splatting. link: https://en.wikipedia.org/wiki/Volume_rendering#Splatting - ? not sure how it works ? 
         -About the colors, check:
-            --Transfer function - Great explanation in this class, last 10 minutes (including marching squares and some other definitions) https://www.youtube.com/watch?v=FYAJQgYdeqQ&index=9&list=PLZo40sVmw_4N70yhFIiy_SbOs0cubfLJn
+            --Transfer function: it's a function used to transform data into an expression based on color and opacity, usually represented as an RGBA value, this is RGB+Alpha.
+            --Transfer function - Great explanation in this class, last 10 minutes (including marching squares and some other definitions) https://youtu.be/FYAJQgYdeqQ?t=42m52s
+            --Transfer function: a video about how to use this method to analyse a volume.
             --Probabilistic models: The colour of a given point is weighted according to the colours of different tissues considering the probability that the point of this material was.
         -Very important about ray composition:
             --Each ray takes a set of samples
