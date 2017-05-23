@@ -1,0 +1,226 @@
+% Atom auto build latex -> Ctrl+Alt+B
+% Atom check spelling Ctrl+:
+% To use latex python scripts: cd ~/Dropbox/GeekFiles/Latex/ && source ~/Coding/venv/bin/activate
+
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{float}
+\usepackage[pdftex]{graphicx}
+\usepackage{url}
+\usepackage{listings}               % Code type bash
+\usepackage{subfig}                 % Images in a row
+
+\title{VIS - Global Practice (SciVis) \\ \bigskip Geopotential height using transfer function}
+\author{\\ Carlos García}
+\date{May 2017}
+
+\begin{document}
+\maketitle \newpage \tableofcontents \newpage
+% ------------------------------------------------------------------------------
+\section{Project context}
+The idea is to represent geopotential data from a concrete instant of time and draw it over the
+cartography to visualise the necessary property values by using OpenGL.
+
+In order to perform this kind of visualisation with the provided geopotential data a technique is
+proposed : ​ transfer function.
+
+The transfer function can be understood as a function used to transform data into an expression based on color and opacity, usually represented as an RGBA value, where RGB are the usual color components of an image, and the final A represents the opacity commonly called `alpha'.
+
+% ------------------------------------------------------------------------------
+\section{Input Data Set}
+First, a set of files with the ​ cartography​ are provided (europe. folder) :
+\begin{itemize}
+  \item euro\_contour: list of points limiting the contour of Europe and closest zones
+  \item euro\_meridians: list of points defining the meridians over the previous zone
+  \item euro\_parallels​: list of points defining the parallels in the same zone
+  \item euro\_points​: list of point which complements the parallels in the same zone
+\end{itemize}
+
+Indeed, this files contains the points which define all the necessary elements. The first value from file is the number of points, N, followed by the N pairs of values corresponding to the coordinates (x,y) of each point.\\
+
+\noindent Example :\\
+4\\
+0.01  0.09\\
+0.05  0.07\\
+0.08  0.04\\
+0.12  0.01\\
+
+Secondly, a set of data for the geopotential height for this zone in different time instants is provided (geopotential folder). The geopotential height is the way to measure the surface pressure. Quoting Wikipedia :
+
+\indent ``Geopotential height is a vertical coordinate referenced to Earth's ​ mean sea level — an adjustment to geometric height (​ elevation above mean sea level) using the variation of gravity with ​ latitude and elevation. Thus it can be considered a "gravity-adjusted height". One usually speaks of the geopotential height of a certain ​ pressure level​, which would correspond to the geopotential height necessary to reach the given ​ pressure​ .''
+
+For this data, another set of files is provided, using the pattern name geoXX.grd, where XX is the time instant. These files are in ASCII code and contains a header with the following structure:\\
+
+\noindent DSAA 35 25 // number of columns and rows\\
+0.00 26.20 // values for the geometric points valors in the X axis\\
+0.00 18.60 // values for points in the Y axis\\
+272.06 325.15// range for the following property values\\
+
+Finally, in the second part, each file has a list with the corresponding property values of the same time instant.
+
+% ------------------------------------------------------------------------------
+\section{Run program}
+To run this program, simply go to `code' directory, once there, execute the following commands:
+\begin{enumerate}
+  \item Build the project:
+      gradle compileGroovy
+  \item Run the project:
+      gradle run
+\end{enumerate}
+
+% ------------------------------------------------------------------------------
+\section{Legend information}
+In the lower-left part of the windows, we can find a small rectangle showing the plot legend, it shows the minimum and maximum geopotential height values, each of them above the corresponding color used to draw the transfer function.
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.4 \textwidth]{"/home/cj/Pictures/Screenshot from 2017-05-23 13-26-33"}
+  \caption{Legend view}
+\end{figure}
+
+Notice that this legend is dynamic, and change in real time according to other interactions from the user.
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=1 \textwidth]{"/home/cj/Pictures/Screenshot from 2017-05-23 12-31-56"}
+  \caption{Original view}
+  \label{}
+\end{figure}
+% ------------------------------------------------------------------------------
+\section{User interactions}
+The interaction with this software is quite easy, simply use one of the following keys:
+\begin{itemize}
+  \item `a': increase the time instant data set used to plot the transfer function.
+
+  \begin{figure}[H]
+    \centering
+    \includegraphics[width=1 \textwidth]{"/home/cj/Pictures/Screenshot from 2017-05-23 12-34-04"}
+    \caption{View after pressing `a' key once}
+  \end{figure}
+
+  \item `z': decrease the time instant data set used to plot the transfer function.
+
+  \begin{figure}[H]
+    \centering
+    \includegraphics[width=1 \textwidth]{"/home/cj/Pictures/Screenshot from 2017-05-23 12-34-41"}
+    \caption{View after pressing `z' key once}
+  \end{figure}
+
+  \item `q': decrease alpha value when plotting transfer function (after reaching 0, the alpha value is set to 1).
+
+  \begin{figure}[H]
+    \centering
+    \includegraphics[width=1 \textwidth]{"/home/cj/Pictures/Screenshot from 2017-05-23 12-38-40"}
+    \caption{View after pressing `q' key several times}
+  \end{figure}
+
+  \item `l': show or hide legend block.
+
+  \begin{figure}[H]
+    \centering
+    \includegraphics[width=1 \textwidth]{"/home/cj/Pictures/Screenshot from 2017-05-23 12-40-11"}
+    \caption{View after pressing `l' key once}
+  \end{figure}
+
+  \item `1': increase minimum red value in RGB when plotting transfer function (after reaching maximum red value, the minimum is set to 0).
+
+  \begin{figure}[H]
+    \centering
+    \includegraphics[width=1 \textwidth]{"/home/cj/Pictures/Screenshot from 2017-05-23 12-51-39"}
+    \caption{View after pressing `1' key several times}
+  \end{figure}
+
+  \item `2': decrease maximum red value in RGB when plotting transfer function (after reaching minimum red value, the maximum is set to 255).
+
+  \begin{figure}[H]
+    \centering
+    \includegraphics[width=1 \textwidth]{"/home/cj/Pictures/Screenshot from 2017-05-23 12-54-04"}
+    \caption{View after pressing `2' key several times}
+  \end{figure}
+
+  \item `3': increase minimum blue value in RGB when plotting transfer function (after reaching maximum blue value, the minimum is set to 0).
+
+  \begin{figure}[H]
+    \centering
+    \includegraphics[width=1 \textwidth]{"/home/cj/Pictures/Screenshot from 2017-05-23 12-54-41"}
+    \caption{View after pressing `3' key several times}
+  \end{figure}
+
+  \item `4': decrease maximum blue value in RGB when plotting transfer function (after reaching minimum blue value, the maximum is set to 255).
+
+  \begin{figure}[H]
+    \centering
+    \includegraphics[width=1 \textwidth]{"/home/cj/Pictures/Screenshot from 2017-05-23 12-55-02"}
+    \caption{View after pressing `4' key several times}
+  \end{figure}
+
+  \item `5': increase minimum green value in RGB when plotting transfer function (after reaching maximum green value, the minimum is set to 0).
+
+  \begin{figure}[H]
+    \centering
+    \includegraphics[width=1 \textwidth]{"/home/cj/Pictures/Screenshot from 2017-05-23 12-55-23"}
+    \caption{View after pressing `5' key several times}
+  \end{figure}
+
+  \item `6': decrease maximum green value in RGB when plotting transfer function (after reaching minimum green value, the maximum is set to 255).
+
+  \begin{figure}[H]
+    \centering
+    \includegraphics[width=1 \textwidth]{"/home/cj/Pictures/Screenshot from 2017-05-23 12-55-40"}
+    \caption{View after pressing `6' key several times}
+  \end{figure}
+
+  \item `r': reset all values to initial state and plot first time instant from geopotential data set.
+
+  \begin{figure}[H]
+    \centering
+    \includegraphics[width=1 \textwidth]{"/home/cj/Pictures/Screenshot from 2017-05-23 12-42-46"}
+    \caption{View after pressing `r' key once}
+  \end{figure}
+
+\end{itemize}
+% ------------------------------------------------------------------------------
+\section{Other results}
+If we combine some of the interactions the results can be also interesting, give us some extra information or even just make the plots look nicer:
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=1 \textwidth]{"/home/cj/Pictures/Screenshot from 2017-05-23 13-07-13"}
+  \caption{Hiding transfer function by decreasing alpha value}
+\end{figure}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=1 \textwidth]{"/home/cj/Pictures/Screenshot from 2017-05-23 13-09-49"}
+  \caption{Mixing colors to highlight differences}
+\end{figure}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=1 \textwidth]{"/home/cj/Pictures/Screenshot from 2017-05-23 13-10-41"}
+  \caption{Showing only geopotential values by increasing alpha value}
+\end{figure}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=1 \textwidth]{"/home/cj/Pictures/Screenshot from 2017-05-23 13-12-34"}
+  \caption{Changing color margins}
+\end{figure}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.9 \textwidth]{"/home/cj/Pictures/Screenshot from 2017-05-23 13-13-25"}
+  \caption{Showing only a faint image of the map, giving more importance to geopotential values}
+\end{figure}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.9 \textwidth]{"/home/cj/Pictures/Screenshot from 2017-05-23 13-15-37"}
+  \caption{Trying with a different instant data set}
+\end{figure}
+
+% ------------------------------------------------------------------------------
+\section{Conclusion}
+After executing and interacting with the program is evident how useful the transfer function might be, specially when trying to show some data overlapping another one. In this case for instance, it would be completely useless showing the map or the geopotential values independently, hence, this kind of information is perfect to be plotted using the transfer function method.
+% ------------------------------------------------------------------------------
+\end{document}

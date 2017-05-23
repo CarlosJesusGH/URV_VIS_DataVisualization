@@ -67,14 +67,19 @@ public class Scene extends JFrame implements GLEventListener, KeyListener {
 			char key = arg0.getKeyChar()
 			
 			switch(key) {
-				  case 'a':
-					  model.incInstant()
+				  case 'a': model.incInstant()
 				  break
-				  case 'z':
-					  model.decInstant()
+				  case 'z': model.decInstant()
 				  break
-				  
-				  case 'r': fun.reset()			  
+				  case 'q': fun.toggleAlpha()
+				  break
+				  case 'l': fun.toggleLegend()
+				  break
+				  case 'r': fun.reset()
+					  // Also draw first instant from geopotential data set.
+					  model.geopotential.clear()
+					  model.currentInstant = 0
+					  model.readDataFile(model.instants[0], model.geopotential)
 				  break
 				  case '1': fun.toggleMinRed()			  
 				  break
