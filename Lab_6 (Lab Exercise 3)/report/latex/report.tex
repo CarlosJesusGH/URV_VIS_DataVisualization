@@ -1,0 +1,51 @@
+% Atom auto build latex -> Ctrl+Alt+B
+% Atom check spelling Ctrl+:
+% To use latex python scripts: cd ~/Dropbox/GeekFiles/Latex/ && source ~/Coding/venv/bin/activate
+
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{float}
+\usepackage[pdftex]{graphicx}
+\usepackage{url}
+\usepackage{listings}               % Code type bash
+\usepackage{subfig}                 % Images in a row
+
+\title{VIS - Lab Exercise 3 \\ \bigskip Analysis of an infographic}
+\author{\\ Carlos García}
+\date{May 2017}
+
+\begin{document}
+\maketitle \newpage \tableofcontents \newpage
+% ------------------------------------------------------------------------------
+\section{Project description}
+The goal of this activity is to study an infographic and analyze its design and characteristics.
+You need to deliver a written document with the analysis that has to include the following 4
+points:
+\begin{enumerate}
+  \item A general description of the infographic, explaining its context and where it has been taken from.
+  \item An analysis of all the resources used in the infographic (line bars, pie charts, ...), what data are they representing, and what message do they want to communicate.
+  \item A detailed analysis of the application of Tufte’s principles in the infographic. In the cases where there is a disagreement between a principle and the infographic, explain with detail what part of the infographic is incorrect, and how it should be fixed.
+  \item A list of improvements that you think can be made to increase the quality of the visualization.
+\end{enumerate}
+% ------------------------------------------------------------------------------
+\section{}
+% ------------------------------------------------------------------------------
+\section{}
+% ------------------------------------------------------------------------------
+\section{}
+% ------------------------------------------------------------------------------
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=1\textwidth]{"/home/cj/Downloads/sample-image"} %not use extension
+  \caption{Caption \cite{alias}}
+  % \label{Fig:if_necessary}
+\end{figure}
+
+% ------------------------------------------------------------------------------
+\newpage
+\bibliographystyle{unsrt}   %unsrt by appearance
+% Create also a file in this folder called "references.bib" and can paste the latex info as Wikipedia use them in "Cite this page" section.
+\bibliography{references}
+% ------------------------------------------------------------------------------
+\end{thebibliography}
+\end{document}

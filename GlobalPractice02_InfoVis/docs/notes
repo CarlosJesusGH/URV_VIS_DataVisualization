@@ -1,0 +1,23 @@
+*The recommended software is d3.js, but I prefer something related to Python, Pandas and IPython (Jupyter), then searching the web I found this great post talking about it:
+    https://www.quora.com/Are-there-any-python-libraries-that-compare-to-d3-js-in-the-variety-and-quality-of-data-visualizations-they-can-produce
+
+*Don't forget using https://ipython.org/.
+
+*In case I can combine the IPython and d3js, check this tutorial where this guy explains d3 step by step.
+    https://www.youtube.com/watch?v=qIIKw2RFNlU
+
+*After reading this post
+    http://cse.ucsd.edu/about/declarative-interaction-design-data-visualization
+I think that vega-lite is a good tool to use while drawing and interacting with data
+    http://idl.cs.washington.edu/papers/vega-lite/
+    "Vega-Lite, a high-level grammar that enables rapid specification of interactive data visualizations."
+And here there is a Python tool based on vega-lite grammar called Altair
+    https://altair-viz.github.io/
+    Search if there is another better or better-integrated with pandas and Jupyter.
+
+*When selecting the data, consider something using geographic information, so I can make use of a map to plot data over, use Charles Minard's map as inspiration:
+    https://en.wikipedia.org/wiki/Charles_Joseph_Minard
+
+*The topic could be something related to science like human developments, astrophysics, music, etc.
+
+  
