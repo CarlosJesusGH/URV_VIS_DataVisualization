@@ -1,0 +1,70 @@
+\begin{thebibliography}{10}
+
+\bibitem{website:jupyter.org}
+{jupyter.org}.
+\newblock \url{http://jupyter.org/}.
+\newblock [Online; accessed 19-Juny-2017].
+
+\bibitem{website:mpld3.github.io}
+{mpld3}.
+\newblock \url{http://mpld3.github.io/}.
+\newblock [Online; accessed 19-Juny-2017].
+
+\bibitem{rossant13}
+Cyrille Rossant.
+\newblock {\em Learning IPython for Interactive Computing and Data
+  Visualization}.
+\newblock Second edition, 2013.
+
+\bibitem{website:A-gallery-of-interesting-Jupyter-Notebooks}
+{A gallery of interesting Jupyter Notebooks}.
+\newblock
+  \url{https://github.com/jupyter/jupyter/wiki/A-gallery-of-interesting-Jupyter-Notebooks}.
+\newblock [Online; accessed 19-Juny-2017].
+
+\bibitem{website:snap.stanford.edudata}
+{snap.stanford.edudata}.
+\newblock \url{https://snap.stanford.edu/data/}.
+\newblock [Online; accessed 19-Juny-2017].
+
+\bibitem{website:archive.orgdownloadstackexchange}
+{stackexchange}.
+\newblock \url{https://archive.org/download/stackexchange/}.
+\newblock [Online; accessed 19-Juny-2017].
+
+\bibitem{website:snap.stanford.eduprojsnap}
+{snap.stanford.eduprojsnap-icwsmicwsm14-T4-code.zip}.
+\newblock \url{http://snap.stanford.edu/proj/snap-icwsm/icwsm14-T4-code.zip}.
+\newblock [Online; accessed 19-Juny-2017].
+
+\bibitem{wiki:degree}
+Wikipedia.
+\newblock Degree distribution --- wikipedia{,} the free encyclopedia, 2017.
+\newblock [Online; accessed 20-June-2017].
+
+\bibitem{website:en.wikipedia.orgwikiCentralityDegree_centrality}
+{Degree centrality}.
+\newblock \url{https://en.wikipedia.org/wiki/Centrality#Degree_centrality}.
+\newblock [Online; accessed 19-Juny-2017].
+
+\bibitem{website:mongodb.com}
+{mongodb.com}.
+\newblock \url{https://www.mongodb.com/}.
+\newblock [Online; accessed 19-Juny-2017].
+
+\bibitem{website:hadoop.apache.org}
+{hadoop.apache.org}.
+\newblock \url{http://hadoop.apache.org/}.
+\newblock [Online; accessed 19-Juny-2017].
+
+\bibitem{website:spark.apache.org}
+{spark.apache.org}.
+\newblock \url{https://spark.apache.org/}.
+\newblock [Online; accessed 19-Juny-2017].
+
+\bibitem{website:nbviewer.jupyter.org}
+{nbviewer.jupyter.org}.
+\newblock \url{http://nbviewer.jupyter.org/}.
+\newblock [Online; accessed 19-Juny-2017].
+
+\end{thebibliography}

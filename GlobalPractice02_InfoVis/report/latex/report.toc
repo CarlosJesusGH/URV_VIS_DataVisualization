@@ -1,0 +1,20 @@
+\contentsline {section}{\numberline {1}Project description}{3}{section.1}
+\contentsline {subsection}{\numberline {1.1}Context}{3}{subsection.1.1}
+\contentsline {subsection}{\numberline {1.2}What do you have to do?}{3}{subsection.1.2}
+\contentsline {section}{\numberline {2}First decisions}{4}{section.2}
+\contentsline {section}{\numberline {3}Data collection}{5}{section.3}
+\contentsline {section}{\numberline {4}Filtering the data}{8}{section.4}
+\contentsline {section}{\numberline {5}Analyzing the information}{12}{section.5}
+\contentsline {subsection}{\numberline {5.1}Importing all the libraries}{13}{subsection.5.1}
+\contentsline {subsection}{\numberline {5.2}Finding the most influential users per topic}{13}{subsection.5.2}
+\contentsline {subsection}{\numberline {5.3}Plotting the degree distribution}{15}{subsection.5.3}
+\contentsline {subsection}{\numberline {5.4}Drawing the graph}{16}{subsection.5.4}
+\contentsline {subsection}{\numberline {5.5}Plot the evolution of topics over the years}{18}{subsection.5.5}
+\contentsline {subsection}{\numberline {5.6}Scatter plot comparison}{21}{subsection.5.6}
+\contentsline {section}{\numberline {6}Extracting some knowledge}{24}{section.6}
+\contentsline {subsection}{\numberline {6.1}Finding the most influential people per topic}{24}{subsection.6.1}
+\contentsline {subsection}{\numberline {6.2}Comparing the degree distribution in networks}{33}{subsection.6.2}
+\contentsline {subsection}{\numberline {6.3}Comparing the evolution of topics over time}{34}{subsection.6.3}
+\contentsline {subsection}{\numberline {6.4}Comparing the global relevance of topics in scatter plots}{39}{subsection.6.4}
+\contentsline {section}{\numberline {7}Possible improvements}{41}{section.7}
+\contentsline {section}{\numberline {8}Conclusions}{43}{section.8}

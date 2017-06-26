@@ -1,0 +1,20 @@
+\BOOKMARK [1][-]{section.1}{Project description}{}% 1
+\BOOKMARK [2][-]{subsection.1.1}{Context}{section.1}% 2
+\BOOKMARK [2][-]{subsection.1.2}{What do you have to do?}{section.1}% 3
+\BOOKMARK [1][-]{section.2}{First decisions}{}% 4
+\BOOKMARK [1][-]{section.3}{Data collection}{}% 5
+\BOOKMARK [1][-]{section.4}{Filtering the data}{}% 6
+\BOOKMARK [1][-]{section.5}{Analyzing the information}{}% 7
+\BOOKMARK [2][-]{subsection.5.1}{Importing all the libraries}{section.5}% 8
+\BOOKMARK [2][-]{subsection.5.2}{Finding the most influential users per topic}{section.5}% 9
+\BOOKMARK [2][-]{subsection.5.3}{Plotting the degree distribution}{section.5}% 10
+\BOOKMARK [2][-]{subsection.5.4}{Drawing the graph}{section.5}% 11
+\BOOKMARK [2][-]{subsection.5.5}{Plot the evolution of topics over the years}{section.5}% 12
+\BOOKMARK [2][-]{subsection.5.6}{Scatter plot comparison}{section.5}% 13
+\BOOKMARK [1][-]{section.6}{Extracting some knowledge}{}% 14
+\BOOKMARK [2][-]{subsection.6.1}{Finding the most influential people per topic}{section.6}% 15
+\BOOKMARK [2][-]{subsection.6.2}{Comparing the degree distribution in networks}{section.6}% 16
+\BOOKMARK [2][-]{subsection.6.3}{Comparing the evolution of topics over time}{section.6}% 17
+\BOOKMARK [2][-]{subsection.6.4}{Comparing the global relevance of topics in scatter plots}{section.6}% 18
+\BOOKMARK [1][-]{section.7}{Possible improvements}{}% 19
+\BOOKMARK [1][-]{section.8}{Conclusions}{}% 20

@@ -1,0 +1,322 @@
+PWD /home/cj/Dropbox/Personal/Study/MasterURV/2nd_Semester/VIS/Lab_Sessions_and_Practical_Work/GlobalPractice02_InfoVis/report/latex
+INPUT /etc/texmf/web2c/texmf.cnf
+INPUT /usr/share/texmf/web2c/texmf.cnf
+INPUT /usr/share/texlive/texmf-dist/web2c/texmf.cnf
+INPUT /var/lib/texmf/web2c/pdftex/pdflatex.fmt
+INPUT /home/cj/Dropbox/Personal/Study/MasterURV/2nd_Semester/VIS/Lab_Sessions_and_Practical_Work/GlobalPractice02_InfoVis/report/latex/report.tex
+OUTPUT /home/cj/Dropbox/Personal/Study/MasterURV/2nd_Semester/VIS/Lab_Sessions_and_Practical_Work/GlobalPractice02_InfoVis/report/latex/report.log
+INPUT /usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+INPUT /usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+INPUT /usr/share/texlive/texmf-dist/tex/latex/base/size10.clo
+INPUT /usr/share/texlive/texmf-dist/tex/latex/base/size10.clo
+INPUT /usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/base/utf8.def
+INPUT /usr/share/texlive/texmf-dist/tex/latex/base/utf8.def
+INPUT /usr/share/texlive/texmf-dist/tex/latex/base/t1enc.dfu
+INPUT /usr/share/texlive/texmf-dist/tex/latex/base/t1enc.dfu
+INPUT /usr/share/texlive/texmf-dist/tex/latex/base/ot1enc.dfu
+INPUT /usr/share/texlive/texmf-dist/tex/latex/base/ot1enc.dfu
+INPUT /usr/share/texlive/texmf-dist/tex/latex/base/omsenc.dfu
+INPUT /usr/share/texlive/texmf-dist/tex/latex/base/omsenc.dfu
+INPUT /usr/share/texlive/texmf-dist/tex/latex/float/float.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/float/float.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/latexconfig/graphics.cfg
+INPUT /usr/share/texlive/texmf-dist/tex/latex/latexconfig/graphics.cfg
+INPUT /usr/share/texlive/texmf-dist/tex/latex/pdftex-def/pdftex.def
+INPUT /usr/share/texlive/texmf-dist/tex/latex/pdftex-def/pdftex.def
+INPUT /usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+INPUT /usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+INPUT /usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+INPUT /usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/url/url.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/url/url.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
+INPUT /usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
+INPUT /usr/share/texlive/texmf-dist/tex/latex/subfig/subfig.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/subfig/subfig.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
+INPUT /usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
+INPUT /usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
+INPUT /usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
+INPUT /usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
+INPUT /usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
+INPUT /usr/share/texlive/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+INPUT /usr/share/texlive/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/oberdiek/auxhook.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/oberdiek/auxhook.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
+INPUT /usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
+INPUT /usr/share/texlive/texmf-dist/tex/latex/latexconfig/hyperref.cfg
+INPUT /usr/share/texlive/texmf-dist/tex/latex/latexconfig/hyperref.cfg
+INPUT /usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
+INPUT /usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
+INPUT /usr/share/texlive/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
+INPUT /home/cj/Dropbox/Personal/Study/MasterURV/2nd_Semester/VIS/Lab_Sessions_and_Practical_Work/GlobalPractice02_InfoVis/report/latex/report.aux
+INPUT /home/cj/Dropbox/Personal/Study/MasterURV/2nd_Semester/VIS/Lab_Sessions_and_Practical_Work/GlobalPractice02_InfoVis/report/latex/report.aux
+OUTPUT /home/cj/Dropbox/Personal/Study/MasterURV/2nd_Semester/VIS/Lab_Sessions_and_Practical_Work/GlobalPractice02_InfoVis/report/latex/report.aux
+INPUT /usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
+INPUT /usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
+INPUT /usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+INPUT /usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/color.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/color.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/latexconfig/color.cfg
+INPUT /usr/share/texlive/texmf-dist/tex/latex/latexconfig/color.cfg
+INPUT /usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
+INPUT /usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
+INPUT /usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
+INPUT /home/cj/Dropbox/Personal/Study/MasterURV/2nd_Semester/VIS/Lab_Sessions_and_Practical_Work/GlobalPractice02_InfoVis/report/latex/report.out
+INPUT /home/cj/Dropbox/Personal/Study/MasterURV/2nd_Semester/VIS/Lab_Sessions_and_Practical_Work/GlobalPractice02_InfoVis/report/latex/report.out
+INPUT /home/cj/Dropbox/Personal/Study/MasterURV/2nd_Semester/VIS/Lab_Sessions_and_Practical_Work/GlobalPractice02_InfoVis/report/latex/report.out
+INPUT /home/cj/Dropbox/Personal/Study/MasterURV/2nd_Semester/VIS/Lab_Sessions_and_Practical_Work/GlobalPractice02_InfoVis/report/latex/report.out
+OUTPUT /home/cj/Dropbox/Personal/Study/MasterURV/2nd_Semester/VIS/Lab_Sessions_and_Practical_Work/GlobalPractice02_InfoVis/report/latex/report.pdf
+INPUT /home/cj/Dropbox/Personal/Study/MasterURV/2nd_Semester/VIS/Lab_Sessions_and_Practical_Work/GlobalPractice02_InfoVis/report/latex/report.out
+INPUT /home/cj/Dropbox/Personal/Study/MasterURV/2nd_Semester/VIS/Lab_Sessions_and_Practical_Work/GlobalPractice02_InfoVis/report/latex/report.out
+OUTPUT /home/cj/Dropbox/Personal/Study/MasterURV/2nd_Semester/VIS/Lab_Sessions_and_Practical_Work/GlobalPractice02_InfoVis/report/latex/report.out
+INPUT /usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr17.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr12.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr8.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr6.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmmi12.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmmi8.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmmi6.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmsy8.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmsy6.tfm
+INPUT /var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr12.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
+INPUT /home/cj/Dropbox/Personal/Study/MasterURV/2nd_Semester/VIS/Lab_Sessions_and_Practical_Work/GlobalPractice02_InfoVis/report/latex/report.toc
+INPUT /home/cj/Dropbox/Personal/Study/MasterURV/2nd_Semester/VIS/Lab_Sessions_and_Practical_Work/GlobalPractice02_InfoVis/report/latex/report.toc
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm
+OUTPUT /home/cj/Dropbox/Personal/Study/MasterURV/2nd_Semester/VIS/Lab_Sessions_and_Practical_Work/GlobalPractice02_InfoVis/report/latex/report.toc
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmtt10.tfm
+INPUT /usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
+INPUT /usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
+INPUT /home/cj/Pictures/Screenshot from 2017-06-19 23-35-18.png
+INPUT /home/cj/Pictures/Screenshot from 2017-06-19 23-35-18.png
+INPUT /home/cj/Pictures/Screenshot from 2017-06-19 23-35-18.png
+INPUT /home/cj/Pictures/Screenshot from 2017-06-19 23-49-56.png
+INPUT /home/cj/Pictures/Screenshot from 2017-06-19 23-49-56.png
+INPUT /home/cj/Pictures/Screenshot from 2017-06-19 23-49-56.png
+INPUT /home/cj/Pictures/Screenshot from 2017-06-19 23-57-45.png
+INPUT /home/cj/Pictures/Screenshot from 2017-06-19 23-57-45.png
+INPUT /home/cj/Pictures/Screenshot from 2017-06-19 23-57-45.png
+INPUT /home/cj/Pictures/Screenshot from 2017-06-20 00-36-30.png
+INPUT /home/cj/Pictures/Screenshot from 2017-06-20 00-36-30.png
+INPUT /home/cj/Pictures/Screenshot from 2017-06-20 00-36-30.png
+INPUT /home/cj/Pictures/Screenshot from 2017-06-20 00-44-38.png
+INPUT /home/cj/Pictures/Screenshot from 2017-06-20 00-44-38.png
+INPUT /home/cj/Pictures/Screenshot from 2017-06-20 00-44-38.png
+INPUT /home/cj/Pictures/Screenshot from 2017-06-20 00-49-16.png
+INPUT /home/cj/Pictures/Screenshot from 2017-06-20 00-49-16.png
+INPUT /home/cj/Pictures/Screenshot from 2017-06-20 00-49-16.png
+INPUT /home/cj/Pictures/Screenshot from 2017-06-20 00-53-05.png
+INPUT /home/cj/Pictures/Screenshot from 2017-06-20 00-53-05.png
+INPUT /home/cj/Pictures/Screenshot from 2017-06-20 00-53-05.png
+INPUT /home/cj/Pictures/Screenshot from 2017-06-20 09-55-26.png
+INPUT /home/cj/Pictures/Screenshot from 2017-06-20 09-55-26.png
+INPUT /home/cj/Pictures/Screenshot from 2017-06-20 09-55-26.png
+INPUT /home/cj/Pictures/Screenshot from 2017-06-20 09-54-20.png
+INPUT /home/cj/Pictures/Screenshot from 2017-06-20 09-54-20.png
+INPUT /home/cj/Pictures/Screenshot from 2017-06-20 09-54-20.png
+INPUT /home/cj/Pictures/Screenshot from 2017-06-20 09-58-42.png
+INPUT /home/cj/Pictures/Screenshot from 2017-06-20 09-58-42.png
+INPUT /home/cj/Pictures/Screenshot from 2017-06-20 09-58-42.png
+INPUT /home/cj/Pictures/Screenshot from 2017-06-20 10-08-43.png
+INPUT /home/cj/Pictures/Screenshot from 2017-06-20 10-08-43.png
+INPUT /home/cj/Pictures/Screenshot from 2017-06-20 10-08-43.png
+INPUT /home/cj/Pictures/Screenshot from 2017-06-20 10-13-31.png
+INPUT /home/cj/Pictures/Screenshot from 2017-06-20 10-13-31.png
+INPUT /home/cj/Pictures/Screenshot from 2017-06-20 10-13-31.png
+INPUT /home/cj/Pictures/Screenshot from 2017-06-20 10-22-43.png
+INPUT /home/cj/Pictures/Screenshot from 2017-06-20 10-22-43.png
+INPUT /home/cj/Pictures/Screenshot from 2017-06-20 10-22-43.png
+INPUT /home/cj/Pictures/Screenshot from 2017-06-20 10-23-43.png
+INPUT /home/cj/Pictures/Screenshot from 2017-06-20 10-23-43.png
+INPUT /home/cj/Pictures/Screenshot from 2017-06-20 10-23-43.png
+INPUT /home/cj/Pictures/Screenshot from 2017-06-20 10-36-16.png
+INPUT /home/cj/Pictures/Screenshot from 2017-06-20 10-36-16.png
+INPUT /home/cj/Pictures/Screenshot from 2017-06-20 10-36-16.png
+INPUT /home/cj/Pictures/Screenshot from 2017-06-20 10-39-04.png
+INPUT /home/cj/Pictures/Screenshot from 2017-06-20 10-39-04.png
+INPUT /home/cj/Pictures/Screenshot from 2017-06-20 10-39-04.png
+INPUT /home/cj/Pictures/Screenshot from 2017-06-20 11-06-38.png
+INPUT /home/cj/Pictures/Screenshot from 2017-06-20 11-06-38.png
+INPUT /home/cj/Pictures/Screenshot from 2017-06-20 11-06-38.png
+INPUT /home/cj/Pictures/Screenshot from 2017-06-20 11-15-04.png
+INPUT /home/cj/Pictures/Screenshot from 2017-06-20 11-15-04.png
+INPUT /home/cj/Pictures/Screenshot from 2017-06-20 11-15-04.png
+INPUT /home/cj/Pictures/Screenshot from 2017-06-20 11-44-57.png
+INPUT /home/cj/Pictures/Screenshot from 2017-06-20 11-44-57.png
+INPUT /home/cj/Pictures/Screenshot from 2017-06-20 11-44-57.png
+INPUT /home/cj/Pictures/Screenshot from 2017-06-20 11-46-13.png
+INPUT /home/cj/Pictures/Screenshot from 2017-06-20 11-46-13.png
+INPUT /home/cj/Pictures/Screenshot from 2017-06-20 11-46-13.png
+INPUT /home/cj/Pictures/Screenshot from 2017-06-20 11-47-23.png
+INPUT /home/cj/Pictures/Screenshot from 2017-06-20 11-47-23.png
+INPUT /home/cj/Pictures/Screenshot from 2017-06-20 11-47-23.png
+INPUT /home/cj/Pictures/Screenshot from 2017-06-20 11-56-31.png
+INPUT /home/cj/Pictures/Screenshot from 2017-06-20 11-56-31.png
+INPUT /home/cj/Pictures/Screenshot from 2017-06-20 11-56-31.png
+INPUT /home/cj/Pictures/Screenshot from 2017-06-20 11-57-14.png
+INPUT /home/cj/Pictures/Screenshot from 2017-06-20 11-57-14.png
+INPUT /home/cj/Pictures/Screenshot from 2017-06-20 11-57-14.png
+INPUT /home/cj/Pictures/Screenshot from 2017-06-20 12-33-14.png
+INPUT /home/cj/Pictures/Screenshot from 2017-06-20 12-33-14.png
+INPUT /home/cj/Pictures/Screenshot from 2017-06-20 12-33-14.png
+INPUT /home/cj/Pictures/Screenshot from 2017-06-20 12-49-00.png
+INPUT /home/cj/Pictures/Screenshot from 2017-06-20 12-49-00.png
+INPUT /home/cj/Pictures/Screenshot from 2017-06-20 12-49-00.png
+INPUT /home/cj/Pictures/Screenshot from 2017-06-20 12-55-35.png
+INPUT /home/cj/Pictures/Screenshot from 2017-06-20 12-55-35.png
+INPUT /home/cj/Pictures/Screenshot from 2017-06-20 12-55-35.png
+INPUT /home/cj/Pictures/Screenshot from 2017-06-20 12-59-29.png
+INPUT /home/cj/Pictures/Screenshot from 2017-06-20 12-59-29.png
+INPUT /home/cj/Pictures/Screenshot from 2017-06-20 12-59-29.png
+INPUT /home/cj/Pictures/Screenshot from 2017-06-20 16-10-28.png
+INPUT /home/cj/Pictures/Screenshot from 2017-06-20 16-10-28.png
+INPUT /home/cj/Pictures/Screenshot from 2017-06-20 16-10-28.png
+INPUT /home/cj/Pictures/Screenshot from 2017-06-20 16-13-51.png
+INPUT /home/cj/Pictures/Screenshot from 2017-06-20 16-13-51.png
+INPUT /home/cj/Pictures/Screenshot from 2017-06-20 16-13-51.png
+INPUT /home/cj/Pictures/Screenshot from 2017-06-20 16-14-40.png
+INPUT /home/cj/Pictures/Screenshot from 2017-06-20 16-14-40.png
+INPUT /home/cj/Pictures/Screenshot from 2017-06-20 16-14-40.png
+INPUT /home/cj/Pictures/Screenshot from 2017-06-20 16-16-19.png
+INPUT /home/cj/Pictures/Screenshot from 2017-06-20 16-16-19.png
+INPUT /home/cj/Pictures/Screenshot from 2017-06-20 16-16-19.png
+INPUT /home/cj/Pictures/Screenshot from 2017-06-20 17-11-23.png
+INPUT /home/cj/Pictures/Screenshot from 2017-06-20 17-11-23.png
+INPUT /home/cj/Pictures/Screenshot from 2017-06-20 17-11-23.png
+INPUT /home/cj/Pictures/Screenshot from 2017-06-20 17-14-23.png
+INPUT /home/cj/Pictures/Screenshot from 2017-06-20 17-14-23.png
+INPUT /home/cj/Pictures/Screenshot from 2017-06-20 17-14-23.png
+INPUT /home/cj/Pictures/Screenshot from 2017-06-20 17-14-59.png
+INPUT /home/cj/Pictures/Screenshot from 2017-06-20 17-14-59.png
+INPUT /home/cj/Pictures/Screenshot from 2017-06-20 17-14-59.png
+INPUT /home/cj/Pictures/Screenshot from 2017-06-20 17-16-32.png
+INPUT /home/cj/Pictures/Screenshot from 2017-06-20 17-16-32.png
+INPUT /home/cj/Pictures/Screenshot from 2017-06-20 17-16-32.png
+INPUT /home/cj/Pictures/Screenshot from 2017-06-20 17-17-24.png
+INPUT /home/cj/Pictures/Screenshot from 2017-06-20 17-17-24.png
+INPUT /home/cj/Pictures/Screenshot from 2017-06-20 17-17-24.png
+INPUT /home/cj/Pictures/Screenshot from 2017-06-20 17-18-23.png
+INPUT /home/cj/Pictures/Screenshot from 2017-06-20 17-18-23.png
+INPUT /home/cj/Pictures/Screenshot from 2017-06-20 17-18-23.png
+INPUT /home/cj/Pictures/Screenshot from 2017-06-20 17-19-50.png
+INPUT /home/cj/Pictures/Screenshot from 2017-06-20 17-19-50.png
+INPUT /home/cj/Pictures/Screenshot from 2017-06-20 17-19-50.png
+INPUT /home/cj/Pictures/Screenshot from 2017-06-20 17-23-07.png
+INPUT /home/cj/Pictures/Screenshot from 2017-06-20 17-23-07.png
+INPUT /home/cj/Pictures/Screenshot from 2017-06-20 17-23-07.png
+INPUT /home/cj/Pictures/Screenshot from 2017-06-20 17-23-43.png
+INPUT /home/cj/Pictures/Screenshot from 2017-06-20 17-23-43.png
+INPUT /home/cj/Pictures/Screenshot from 2017-06-20 17-23-43.png
+INPUT /home/cj/Pictures/Screenshot from 2017-06-20 17-24-44.png
+INPUT /home/cj/Pictures/Screenshot from 2017-06-20 17-24-44.png
+INPUT /home/cj/Pictures/Screenshot from 2017-06-20 17-24-44.png
+INPUT /home/cj/Pictures/Screenshot from 2017-06-20 17-26-20.png
+INPUT /home/cj/Pictures/Screenshot from 2017-06-20 17-26-20.png
+INPUT /home/cj/Pictures/Screenshot from 2017-06-20 17-26-20.png
+INPUT /home/cj/Pictures/Screenshot from 2017-06-20 17-27-32.png
+INPUT /home/cj/Pictures/Screenshot from 2017-06-20 17-27-32.png
+INPUT /home/cj/Pictures/Screenshot from 2017-06-20 17-27-32.png
+INPUT /home/cj/Pictures/Screenshot from 2017-06-20 17-28-03.png
+INPUT /home/cj/Pictures/Screenshot from 2017-06-20 17-28-03.png
+INPUT /home/cj/Pictures/Screenshot from 2017-06-20 17-28-03.png
+INPUT /home/cj/Pictures/Screenshot from 2017-06-20 17-28-52.png
+INPUT /home/cj/Pictures/Screenshot from 2017-06-20 17-28-52.png
+INPUT /home/cj/Pictures/Screenshot from 2017-06-20 17-28-52.png
+INPUT /home/cj/Pictures/Screenshot from 2017-06-20 17-29-25.png
+INPUT /home/cj/Pictures/Screenshot from 2017-06-20 17-29-25.png
+INPUT /home/cj/Pictures/Screenshot from 2017-06-20 17-29-25.png
+INPUT /home/cj/Pictures/Screenshot from 2017-06-20 17-31-47.png
+INPUT /home/cj/Pictures/Screenshot from 2017-06-20 17-31-47.png
+INPUT /home/cj/Pictures/Screenshot from 2017-06-20 17-31-47.png
+INPUT /home/cj/Pictures/Screenshot from 2017-06-20 17-36-59.png
+INPUT /home/cj/Pictures/Screenshot from 2017-06-20 17-36-59.png
+INPUT /home/cj/Pictures/Screenshot from 2017-06-20 17-36-59.png
+INPUT /home/cj/Pictures/Screenshot from 2017-06-20 17-37-54.png
+INPUT /home/cj/Pictures/Screenshot from 2017-06-20 17-37-54.png
+INPUT /home/cj/Pictures/Screenshot from 2017-06-20 17-37-54.png
+INPUT /home/cj/Pictures/Screenshot from 2017-06-20 17-38-21.png
+INPUT /home/cj/Pictures/Screenshot from 2017-06-20 17-38-21.png
+INPUT /home/cj/Pictures/Screenshot from 2017-06-20 17-38-21.png
+INPUT /home/cj/Pictures/Screenshot from 2017-06-20 17-38-54.png
+INPUT /home/cj/Pictures/Screenshot from 2017-06-20 17-38-54.png
+INPUT /home/cj/Pictures/Screenshot from 2017-06-20 17-38-54.png
+INPUT /home/cj/Pictures/Screenshot from 2017-06-20 17-46-57.png
+INPUT /home/cj/Pictures/Screenshot from 2017-06-20 17-46-57.png
+INPUT /home/cj/Pictures/Screenshot from 2017-06-20 17-46-57.png
+INPUT /home/cj/Pictures/Screenshot from 2017-06-20 17-48-51.png
+INPUT /home/cj/Pictures/Screenshot from 2017-06-20 17-48-51.png
+INPUT /home/cj/Pictures/Screenshot from 2017-06-20 17-48-51.png
+INPUT /home/cj/Pictures/Screenshot from 2017-06-20 17-55-27.png
+INPUT /home/cj/Pictures/Screenshot from 2017-06-20 17-55-27.png
+INPUT /home/cj/Pictures/Screenshot from 2017-06-20 17-55-27.png
+INPUT /home/cj/Pictures/Screenshot from 2017-06-20 17-52-51.png
+INPUT /home/cj/Pictures/Screenshot from 2017-06-20 17-52-51.png
+INPUT /home/cj/Pictures/Screenshot from 2017-06-20 17-52-51.png
+INPUT /home/cj/Pictures/Screenshot from 2017-06-20 17-58-11.png
+INPUT /home/cj/Pictures/Screenshot from 2017-06-20 17-58-11.png
+INPUT /home/cj/Pictures/Screenshot from 2017-06-20 17-58-11.png
+INPUT /home/cj/Pictures/Screenshot from 2017-06-20 18-03-07.png
+INPUT /home/cj/Pictures/Screenshot from 2017-06-20 18-03-07.png
+INPUT /home/cj/Pictures/Screenshot from 2017-06-20 18-03-07.png
+INPUT /home/cj/Pictures/Screenshot from 2017-06-20 14-12-01.png
+INPUT /home/cj/Pictures/Screenshot from 2017-06-20 14-12-01.png
+INPUT /home/cj/Pictures/Screenshot from 2017-06-20 14-12-01.png
+INPUT /home/cj/Pictures/Screenshot from 2017-06-20 14-22-34.png
+INPUT /home/cj/Pictures/Screenshot from 2017-06-20 14-22-34.png
+INPUT /home/cj/Pictures/Screenshot from 2017-06-20 14-22-34.png
+INPUT /home/cj/Pictures/Screenshot from 2017-06-20 14-24-59.png
+INPUT /home/cj/Pictures/Screenshot from 2017-06-20 14-24-59.png
+INPUT /home/cj/Pictures/Screenshot from 2017-06-20 14-24-59.png
+INPUT /home/cj/Pictures/Screenshot from 2017-06-20 15-27-30.png
+INPUT /home/cj/Pictures/Screenshot from 2017-06-20 15-27-30.png
+INPUT /home/cj/Pictures/Screenshot from 2017-06-20 15-27-30.png
+INPUT /home/cj/Dropbox/Personal/Study/MasterURV/2nd_Semester/VIS/Lab_Sessions_and_Practical_Work/GlobalPractice02_InfoVis/report/latex/report.bbl
+INPUT /home/cj/Dropbox/Personal/Study/MasterURV/2nd_Semester/VIS/Lab_Sessions_and_Practical_Work/GlobalPractice02_InfoVis/report/latex/report.bbl
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmti10.tfm
+INPUT /home/cj/Dropbox/Personal/Study/MasterURV/2nd_Semester/VIS/Lab_Sessions_and_Practical_Work/GlobalPractice02_InfoVis/report/latex/report.aux
+INPUT /home/cj/Dropbox/Personal/Study/MasterURV/2nd_Semester/VIS/Lab_Sessions_and_Practical_Work/GlobalPractice02_InfoVis/report/latex/report.out
+INPUT /home/cj/Dropbox/Personal/Study/MasterURV/2nd_Semester/VIS/Lab_Sessions_and_Practical_Work/GlobalPractice02_InfoVis/report/latex/report.out
+INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
+INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
+INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb
+INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb
+INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb
+INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb
+INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb
+INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
+INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb
+INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb

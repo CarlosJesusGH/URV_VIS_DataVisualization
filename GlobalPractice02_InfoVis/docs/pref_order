@@ -1,0 +1,4 @@
+FROM: https://snap.stanford.edu/data/web-Movies.html
+Web data: Amazon movie reviews
+pros: includes time stamp.
+note: I could analyze the words most used when good rates

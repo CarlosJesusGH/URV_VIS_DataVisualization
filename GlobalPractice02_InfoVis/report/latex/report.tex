@@ -1,0 +1,552 @@
+% Atom auto build latex -> Ctrl+Alt+B
+% Atom check spelling Ctrl+:
+% To use latex python scripts: cd ~/Dropbox/GeekFiles/Latex/ && source ~/Coding/venv/bin/activate
+
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{float}
+\usepackage[pdftex]{graphicx}
+\usepackage{url}
+\usepackage{listings}               % Code type bash
+\usepackage{subfig}                 % Images in a row
+\usepackage{hyperref}               % use links in the table of contents
+\hypersetup{
+    colorlinks,
+    citecolor=green,
+    filecolor=yellow,
+    linkcolor=blue,
+    urlcolor=red
+}
+
+\title{VIS - Global Practice (InfoVis) \\ \bigskip Visualization and Interaction Systems}
+\author{\\ Carlos García}
+\date{June 2017}
+
+\begin{document}
+\maketitle \newpage \tableofcontents \newpage
+% ------------------------------------------------------------------------------
+\section{Project description}
+  \subsection{Context}
+    This activity consists in generating a visualization using one of the dataset available in this page: \url{https://snap.stanford.edu/data/}. For this part you will need to (1) get the data that you are interested from the open data portal, (2) decide a visualization that has the requirements described in the following section, and (3) implement this visualization with the use of a library.
+  \subsection{What do you have to do?}
+    Design a visualization using the technology that you want (we recommend the use of
+    javascript+d3) that includes ALL the following elements:
+    \begin{itemize}
+      \item A visualization of a network
+      \item A temporal visualization
+      \item Various qualitative/quantitative description charts of the dataset: Pie charts, bar diagrams, scatter plots, etc.
+      \item Interaction with some of the elements of the visualization
+    \end{itemize}
+% ------------------------------------------------------------------------------
+\newpage
+\section{First decisions}
+  When we check trending in the last years about data analysis, data processing and data visualization, one tool is in almost every post, this tool is the Jupyter Notebook. It became famous because it's powerful, dynamic, interactive (specially for programmers) and easy to use compared to other platforms. All this advantages come thanks to combining an excellent programming language like Python with the visualization tools inside the browsers.
+
+  ``The Jupyter Notebook is an open-source web application that allows you to create and share documents that contain live code, equations, visualizations and explanatory text. Uses include: data cleaning and transformation, numerical simulation, statistical modeling, machine learning and much more.''\cite{website:jupyter.org}
+
+  Another great thing about this application, is that, thanks to its modularity, it can be easily connected to other programming languages and libraries, this way we can achieve the recommendation made in the description section about using javascript+d3, for this we simply install and import the library mpld3 \cite{website:mpld3.github.io}.
+
+  \bigskip
+
+  Now that we have selected our working environment, we needed to find good resources to learn how to use them, and fortunately there are tons of information out in the internet, but mainly I focused my attention in two resources:
+
+  \begin{enumerate}
+    \item A very complete book with code samples called ``Learning IPython for Interactive Computing and Data Visualization'' \cite{rossant13}.
+    \item A gallery of interesting Jupyter Notebooks, this is published on Github and there we can find good information and examples \cite{website:A-gallery-of-interesting-Jupyter-Notebooks}.
+  \end{enumerate}
+
+  This both tools (among others) were used during all the stages of this project.
+% ------------------------------------------------------------------------------
+\newpage
+\section{Data collection}
+  As we can see in the task description, the idea was selecting one dataset from the Stanford Large Network Dataset Collection \cite{website:snap.stanford.edudata}, in this collection we have several options depending on the type of data we prefer to deal with. This data is separated in the following categories:
+
+  \begin{description}
+    \item[Social networks:] online social networks, edges represent interactions between people
+    \item[Networks with ground-truth communities:] ground-truth network communities in social and information networks
+    \item[Communication networks:] email communication networks with edges representing communication
+    \item[Citation networks:] nodes represent papers, edges represent citations
+    \item[Collaboration networks:] nodes represent scientists, edges represent collaborations (co-authoring a paper)
+    \item[Web graphs:] nodes represent webpages and edges are hyperlinks
+    \item[Amazon networks:] nodes represent products and edges link commonly co-purchased products
+    \item[Internet networks:] nodes represent computers and edges communication
+    \item[Road networks:] nodes represent intersections and edges roads connecting the intersections
+    \item[Autonomous systems:] graphs of the internet
+    \item[Signed networks:] networks with positive and negative edges (friend/foe, trust/distrust)
+    \item[Location-based online social networks:] Social networks with geographic check-ins
+    \item[Wikipedia networks, articles, and metadata:] Talk, editing, voting, and article data from Wikipedia
+    \item[Temporal networks:] networks where edges have timestamps
+    \item[Twitter and Memetracker:] Memetracker phrases, links and 467 million Tweets
+    \item[Online communities:] Data from online communities such as Reddit and Flickr
+    \item[Online reviews:] Data from online review systems such as BeerAdvocate and Amazon
+  \end{description}
+
+  We found ``Temporal networks'' as a good choice because this way we'd be able to check the evolution of the data along the time, the options for this category are the following:
+
+  \begin{figure}[H]
+    \centering
+    \includegraphics[width=1 \textwidth]{{{"/home/cj/Pictures/Screenshot from 2017-06-19 23-35-18"}}}
+  \end{figure}
+
+  As ``Stack Overflow'' is a very well-known collaboration network for software developers, we think we could extract some good information from this dataset, then now we proceed to download and check the data:
+
+  \begin{figure}[H]
+    \centering
+    \includegraphics[width=1 \textwidth]{{{"/home/cj/Pictures/Screenshot from 2017-06-19 23-49-56"}}}
+  \end{figure}
+
+  As we show in the image, after checking the downloaded packages, none of the files included a datetime column, this is probably because this data is already filtered from the original to reduce the size, but as we'd rather having the datetime stamps as well, then, we go to the main directory listing in stackexchange \cite{website:archive.orgdownloadstackexchange}.
+
+  \begin{figure}[H]
+    \centering
+    \includegraphics[width=1 \textwidth]{{{"/home/cj/Pictures/Screenshot from 2017-06-19 23-57-45"}}}
+  \end{figure}
+
+  The compressed file is about 10.5 GB, and once we uncompress it increases to about 53.8 GB, this is obviously a huge amount of data to be analyzed directly from the main dataset, that's why we decided performing an initial filtering process where we locate and separate the posts according to the topics we are interested in.
+
+  The next section is about how to perform this data filtering process and what tools are used for this purpose.
+% ------------------------------------------------------------------------------
+\newpage
+\section{Filtering the data}
+  In order to help us with the process of extracting information from the datasets, the Stanford guys created some Python template scripts which goes over the big xml file and find the posts we are looking for by using a keyword (it is important to know that this libraries are developed to be used with Python 2.x, not Python 3). In our case we filtered using the tags for certain topics we think are worth learning more details about them, this topics are the following: Python, Java, Android, C++, MongoDB, Linux, Arduino, ROS (Robot Operating System), Raspberry-pi and Apache-Spark.
+
+  The Python scripts mentioned are the following:
+
+  \begin{figure}[H]
+    \centering
+    \includegraphics[width=1 \textwidth]{{{"/home/cj/Pictures/Screenshot from 2017-06-20 00-36-30"}}}
+  \end{figure}
+
+  They can be found in the tutorial exercises \cite{website:snap.stanford.eduprojsnap}.
+
+  To use this scripts we can simply execute the file ``stackoverflow.sh'' and it will perform each step automatically:
+
+  \begin{figure}[H]
+    \centering
+    \includegraphics[width=1 \textwidth]{{{"/home/cj/Pictures/Screenshot from 2017-06-20 00-44-38"}}}
+  \end{figure}
+
+  In the above image, it is being executed for Java posts, but we can change it depending on our choice, in our case we used this bash script:
+
+  \begin{figure}[H]
+    \centering
+    \includegraphics[width=1 \textwidth]{{{"/home/cj/Pictures/Screenshot from 2017-06-20 00-49-16"}}}
+  \end{figure}
+
+  That way we perform each operation for each topic one after the other. At the end we obtain the most important file where the script combines all the information from the question along all the information from the accepted answer:
+
+  \begin{figure}[H]
+    \centering
+    \includegraphics[width=1 \textwidth]{{{"/home/cj/Pictures/Screenshot from 2017-06-20 00-53-05"}}}
+  \end{figure}
+
+  And we organized the outputs from the script in a directory like this:
+
+  \begin{figure}[H]
+    \centering
+    \includegraphics[width=1 \textwidth]{{{"/home/cj/Pictures/Screenshot from 2017-06-20 09-55-26"}}}
+  \end{figure}
+
+  \begin{figure}[H]
+    \centering
+    \includegraphics[width=1 \textwidth]{{{"/home/cj/Pictures/Screenshot from 2017-06-20 09-54-20"}}}
+  \end{figure}
+
+  At this moment, we will focus our attention in the files ``qa-topic.txt'', they are placed in the folder with the same name of the topic, and this files contain all the important information related to one post, including the data about the question and the data about the accepted answer for that question.
+
+% ------------------------------------------------------------------------------
+\newpage
+\section{Analyzing the information}
+  To analyze the data, the idea is start by running the jupyter notebook, to do this we go to the terminal, change the directory and run the corresponding command (it is recommended using a virtual environment specially the ones using the conda package manager):
+
+  \begin{figure}[H]
+    \centering
+    \includegraphics[width=1 \textwidth]{{{"/home/cj/Pictures/Screenshot from 2017-06-20 09-58-42"}}}
+  \end{figure}
+
+  Once there, we create a new notebook and start performing the analysis in independent blocks of code:
+
+  \begin{figure}[H]
+    \centering
+    \includegraphics[width=1 \textwidth]{{{"/home/cj/Pictures/Screenshot from 2017-06-20 10-08-43"}}}
+  \end{figure}
+
+  \subsection{Importing all the libraries}
+    This block is simply to tell the notebook about the libraries will be using during the analysis (there is no output for this block):
+
+    \begin{figure}[H]
+      \centering
+      \includegraphics[width=1 \textwidth]{{{"/home/cj/Pictures/Screenshot from 2017-06-20 10-13-31"}}}
+    \end{figure}
+
+  \subsection{Finding the most influential users per topic}
+    This block creates a graph (using networkx library) where the nodes are the users and the edges are links between the user who asks a question and the user who creates the accepted answer for that question. After having the graph we compute the degree for each node and finally we use this degrees to create a pandas DataFrame and order the rank. At the end we plot the 10 most influential users for the selected topic.
+
+    \begin{figure}[H]
+      \centering
+      \includegraphics[width=1 \textwidth]{{{"/home/cj/Pictures/Screenshot from 2017-06-20 10-22-43"}}}
+    \end{figure}
+
+    Note that this process is interactive and we can select the topic we prefer by using the dropdown list.
+
+    \begin{figure}[H]
+      \centering
+      \includegraphics[width=1 \textwidth]{{{"/home/cj/Pictures/Screenshot from 2017-06-20 10-23-43"}}}
+    \end{figure}
+
+  \subsection{Plotting the degree distribution}
+    In this block we plot the degree distribution of the graph for an specific topic, ``In the study of graphs and networks, the degree of a node in a network is the number of connections it has to other nodes and the degree distribution is the probability distribution of these degrees over the whole network'' \cite{wiki:degree}.
+
+    \begin{figure}[H]
+      \centering
+      \includegraphics[width=1 \textwidth]{{{"/home/cj/Pictures/Screenshot from 2017-06-20 10-36-16"}}}
+    \end{figure}
+
+    This block is also interactive and we can change the topic simply by clicking over the dropdown list or by changing the list in the code, however we prefer:
+
+    \begin{figure}[H]
+      \centering
+      \includegraphics[width=1 \textwidth]{{{"/home/cj/Pictures/Screenshot from 2017-06-20 10-39-04"}}}
+    \end{figure}
+
+  \subsection{Drawing the graph}
+    Here we make use of the networkx library and the mpld3 utilities \cite{website:mpld3.github.io} to draw the graph showing the links between users, additionally we compute the degree centrality \cite{website:en.wikipedia.orgwikiCentralityDegree_centrality} of the nodes and make another rank to check the most influential users per topic. By drawing the graph we have a more didactic and interactive view of the network, this way we can visually identify the most important nodes.
+
+    \begin{figure}[H]
+      \centering
+      \includegraphics[width=1 \textwidth]{{{"/home/cj/Pictures/Screenshot from 2017-06-20 11-06-38"}}}
+    \end{figure}
+
+    Thanks to the mpld3 library \cite{website:mpld3.github.io}, we can easily interact with the plot by hovering the mouse cursor over the nodes, or by using the tool buttons (home, pan and zoom) placed in the left bottom corner of the image:
+
+    \begin{figure}[H]
+      \centering
+      \includegraphics[width=1 \textwidth]{{{"/home/cj/Pictures/Screenshot from 2017-06-20 11-15-04"}}}
+    \end{figure}
+
+    Note that this block should only by tested with small networks, otherwise it last a very long time compiling and drawing the network.
+
+  \subsection{Plot the evolution of topics over the years}
+    In this block we group the data per month and then we count the posts per topic and make the plot according to this number, additionally, we sum (also per month) the score of the questions per topic and represent this value as the width of the line, this width uses a transparency property to avoid mixing with the other information.
+
+    \begin{figure}[H]
+      \centering
+      \includegraphics[width=1 \textwidth]{{{"/home/cj/Pictures/Screenshot from 2017-06-20 11-44-57"}}}
+    \end{figure}
+
+    \begin{figure}[H]
+      \centering
+      \includegraphics[width=1 \textwidth]{{{"/home/cj/Pictures/Screenshot from 2017-06-20 11-46-13"}}}
+    \end{figure}
+
+    In this interactive plot we can highlight one of the topics simply by placing the mouse over its name in the legend:
+
+    \begin{figure}[H]
+      \centering
+      \includegraphics[width=1 \textwidth]{{{"/home/cj/Pictures/Screenshot from 2017-06-20 11-47-23"}}}
+    \end{figure}
+
+    For this plot is almost mandatory using the zooming and panning tools to check the details in the plot (note that the axis also changes according to the zoom, to indicate the specific month we are observing), for example to check the ROS evolution we zoom over the lowest part in the plot:
+
+    \begin{figure}[H]
+      \centering
+      \includegraphics[width=1 \textwidth]{{{"/home/cj/Pictures/Screenshot from 2017-06-20 11-56-31"}}}
+    \end{figure}
+
+    Now the plot is showing a lot more details for the lowest curves in the plot (including also the axis):
+
+    \begin{figure}[H]
+      \centering
+      \includegraphics[width=1 \textwidth]{{{"/home/cj/Pictures/Screenshot from 2017-06-20 11-57-14"}}}
+    \end{figure}
+
+  \subsection{Scatter plot comparison}
+    In this block we create a scatter plot trying to compare certain global properties of the topics, this properties are:
+    \begin{itemize}
+      \item Global question score (represented in the horizontal axis)
+      \item Global answer score (represented in the vertical axis)
+      \item Global question count (represented in the size of the points)
+    \end{itemize}
+
+    This is the code in the jupyter notebook:
+
+    \begin{figure}[H]
+      \centering
+      \includegraphics[width=0.8 \textwidth]{{{"/home/cj/Pictures/Screenshot from 2017-06-20 12-33-14"}}}
+    \end{figure}
+
+    And this is the resulting output, note that this plot is also interactive, we can hover the cursor over the points to check the total number of questions related to this topic:
+
+    \begin{figure}[H]
+      \centering
+      \includegraphics[width=0.8 \textwidth]{{{"/home/cj/Pictures/Screenshot from 2017-06-20 12-49-00"}}}
+    \end{figure}
+
+    Additionally we should make use of the zooming and panning tool to check the differences in the lowest part of the graph:
+
+    \begin{figure}[H]
+      \centering
+      \includegraphics[width=0.8 \textwidth]{{{"/home/cj/Pictures/Screenshot from 2017-06-20 12-55-35"}}}
+    \end{figure}
+
+    Once there we can check the post counting values for the least influential or newest topics like ROS, Raspberry-pi, Arduino and Apache-Spark:
+
+    \begin{figure}[H]
+      \centering
+      \includegraphics[width=0.8 \textwidth]{{{"/home/cj/Pictures/Screenshot from 2017-06-20 12-59-29"}}}
+    \end{figure}
+
+% ------------------------------------------------------------------------------
+\newpage
+\section{Extracting some knowledge}
+  Once we have filtered and visualized the data, it is impossible not getting some extra information and conclusions, we think this are some of the most interesting:
+
+  \subsection{Finding the most influential people per topic}
+    If we execute the second block from our jupyter notebook and go over each topic the results are the following:
+
+    \begin{description}
+      \item[Python:] Most influential user: 100297 with 9213 answered questions in this topic.
+
+      \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.6 \textwidth]{{{"/home/cj/Pictures/Screenshot from 2017-06-20 16-10-28"}}}
+      \end{figure}
+
+      We searched about this user and this is what we found:
+
+      \begin{figure}[H]
+        \centering
+        \includegraphics[width=1 \textwidth]{{{"/home/cj/Pictures/Screenshot from 2017-06-20 16-13-51"}}}
+      \end{figure}
+
+      \item[Java:] Most influential user: 22656 with 5044 answered questions in this topic.
+
+      \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.6 \textwidth]{{{"/home/cj/Pictures/Screenshot from 2017-06-20 16-14-40"}}}
+      \end{figure}
+
+      \begin{figure}[H]
+        \centering
+        \includegraphics[width=1 \textwidth]{{{"/home/cj/Pictures/Screenshot from 2017-06-20 16-16-19"}}}
+      \end{figure}
+
+      \item[Android:] Most influential user: 115145 with 8354 answered questions in this topic.
+
+      \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.6 \textwidth]{{{"/home/cj/Pictures/Screenshot from 2017-06-20 17-11-23"}}}
+      \end{figure}
+
+      \begin{figure}[H]
+        \centering
+        \includegraphics[width=1 \textwidth]{{{"/home/cj/Pictures/Screenshot from 2017-06-20 17-14-23"}}}
+      \end{figure}
+
+      \item[C++:] Most influential user: 204847 with 1882 with 8354 answered questions in this topic.
+
+      \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.6 \textwidth]{{{"/home/cj/Pictures/Screenshot from 2017-06-20 17-14-59"}}}
+      \end{figure}
+
+      \begin{figure}[H]
+        \centering
+        \includegraphics[width=1 \textwidth]{{{"/home/cj/Pictures/Screenshot from 2017-06-20 17-16-32"}}}
+      \end{figure}
+
+      \item[MongoDB:] Most influential user: 1259510 with 1134 answered questions in this topic.
+
+      \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.6 \textwidth]{{{"/home/cj/Pictures/Screenshot from 2017-06-20 17-17-24"}}}
+      \end{figure}
+
+      \begin{figure}[H]
+        \centering
+        \includegraphics[width=1 \textwidth]{{{"/home/cj/Pictures/Screenshot from 2017-06-20 17-18-23"}}}
+      \end{figure}
+
+      \item[Linux:] Most influential user: 548225 with 589 answered questions in this topic.
+
+      \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.6 \textwidth]{{{"/home/cj/Pictures/Screenshot from 2017-06-20 17-19-50"}}}
+      \end{figure}
+
+      \begin{figure}[H]
+        \centering
+        \includegraphics[width=1 \textwidth]{{{"/home/cj/Pictures/Screenshot from 2017-06-20 17-23-07"}}}
+      \end{figure}
+
+      \item[Arduino:] Most influential user: 3368201 with 59 answered questions in this topic.
+
+      \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.6 \textwidth]{{{"/home/cj/Pictures/Screenshot from 2017-06-20 17-23-43"}}}
+      \end{figure}
+
+      \begin{figure}[H]
+        \centering
+        \includegraphics[width=1 \textwidth]{{{"/home/cj/Pictures/Screenshot from 2017-06-20 17-24-44"}}}
+      \end{figure}
+
+      \item[ROS (Robot Operating System):] Most influential user: 2095383 with 25 answered questions in this topic.
+
+      \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.6 \textwidth]{{{"/home/cj/Pictures/Screenshot from 2017-06-20 17-26-20"}}}
+      \end{figure}
+
+      \begin{figure}[H]
+        \centering
+        \includegraphics[width=1 \textwidth]{{{"/home/cj/Pictures/Screenshot from 2017-06-20 17-27-32"}}}
+      \end{figure}
+
+      \item[Raspberry-pi:] Most influential user: 11654 with 13 answered questions in this topic.
+
+      \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.6 \textwidth]{{{"/home/cj/Pictures/Screenshot from 2017-06-20 17-28-03"}}}
+      \end{figure}
+
+      \begin{figure}[H]
+        \centering
+        \includegraphics[width=1 \textwidth]{{{"/home/cj/Pictures/Screenshot from 2017-06-20 17-28-52"}}}
+      \end{figure}
+
+      \item[Apache-Spark:] Most influential user: 1560062 with 870 answered questions in this topic.
+
+      \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.6 \textwidth]{{{"/home/cj/Pictures/Screenshot from 2017-06-20 17-29-25"}}}
+      \end{figure}
+
+      \begin{figure}[H]
+        \centering
+        \includegraphics[width=1 \textwidth]{{{"/home/cj/Pictures/Screenshot from 2017-06-20 17-31-47"}}}
+      \end{figure}
+
+    \end{description}
+
+  \subsection{Comparing the degree distribution in networks}
+    By comparing the degree distribution in a couple of networks:
+
+    \begin{figure}[H]
+      \hspace{-2cm}
+      \begin{tabular}{cc}
+        \subfloat[]{\includegraphics[width=8cm]{"/home/cj/Pictures/Screenshot from 2017-06-20 17-36-59"}}
+        &
+        \subfloat[]{\includegraphics[width=8cm]{"/home/cj/Pictures/Screenshot from 2017-06-20 17-37-54"}}
+        &
+        \subfloat[]{\includegraphics[width=8cm]{"/home/cj/Pictures/Screenshot from 2017-06-20 17-38-21"}}
+        &
+        \subfloat[]{\includegraphics[width=8cm]{"/home/cj/Pictures/Screenshot from 2017-06-20 17-38-54"}}
+      \end{tabular}
+      \caption{Degree distribution compilation}
+    \end{figure}
+
+    We can confirm that for real networks a power-law distribution is a very good approximation, this means that usually for real networks a lot of nodes only have a few links while only a few nodes have a big number of links.
+
+  \subsection{Comparing the evolution of topics over time}
+    By watching the time evolution of the topics:
+
+    \begin{figure}[H]
+      \centering
+      \includegraphics[width=1 \textwidth]{{{"/home/cj/Pictures/Screenshot from 2017-06-20 17-46-57"}}}
+    \end{figure}
+
+    It is interesting to see how important the Java language has been from the beginning of stackoverflow, and with the appearance of Android, it became even stronger:
+
+    \begin{figure}[H]
+      \centering
+      \includegraphics[width=1 \textwidth]{{{"/home/cj/Pictures/Screenshot from 2017-06-20 17-48-51"}}}
+    \end{figure}
+
+    Besides, let us check how Python has been struggling for the last couple of years and it only overtakes Android by February-March 2015,
+
+    \begin{figure}[H]
+      \centering
+      \includegraphics[width=1 \textwidth]{{{"/home/cj/Pictures/Screenshot from 2017-06-20 17-55-27"}}}
+    \end{figure}
+
+    and overtakes Java by July-2016:
+
+    \begin{figure}[H]
+      \centering
+      \includegraphics[width=1 \textwidth]{{{"/home/cj/Pictures/Screenshot from 2017-06-20 17-52-51"}}}
+    \end{figure}
+
+    Finally, if we take a look to the lowest part of the plot, we can discover an approximate time when each technology has appeared (at least for those who appeared after the beginning of stackoverflow):
+
+    \begin{figure}[H]
+      \centering
+      \includegraphics[width=1 \textwidth]{{{"/home/cj/Pictures/Screenshot from 2017-06-20 17-58-11"}}}
+    \end{figure}
+
+  \subsection{Comparing the global relevance of topics in scatter plots}
+    This plot is quite self-explanatory, here we can check the big difference in the relevance and influence from the old well-known languages (like Java and Python) and the new experimental frameworks or technologies (like ROS, Raspberry-pi and Apache-Spark):
+
+    \begin{figure}[H]
+      \centering
+      \includegraphics[width=1 \textwidth]{{{"/home/cj/Pictures/Screenshot from 2017-06-20 18-03-07"}}}
+    \end{figure}
+% ------------------------------------------------------------------------------
+\newpage
+\section{Possible improvements}
+  There are several possible improvements for this data analysis, like including some other topics like C#, PHP, Scala, Groovy, IOS, etc. Another easy improvement is selecting some extra information from the posts and use it in the plots, for instance using the number of comments in the questions or the number of comments in the accepted answer, or the number of answer apart from the accepted one, etc.
+
+  Besides, there are some other improvements, not so easy, but with an important impact in the data analysis, this improvements are:
+  \begin{description}
+    \item[Using a database:] databases are good to organize, index and search into big amounts of data, much of the time the performance is much better querying into databases compared to simple text files. A great option for this purpose is the NoSql Json-like database MongoDB \cite{website:mongodb.com}.
+
+    MongoDB is free, open source and also include some free courses in the official website:
+
+    \begin{figure}[H]
+      \centering
+      \includegraphics[width=1 \textwidth]{{{"/home/cj/Pictures/Screenshot from 2017-06-20 14-12-01"}}}
+    \end{figure}
+
+    \item[Parallel computing:] this is probably the best improvement and also the most difficult to carry out, there are some free tools out there to accomplish this task, like Hadoop \cite{website:hadoop.apache.org}, but mastering this tools require significant time, effort and hardware to make tests.
+    A really good option for this task, considering that we are using Jupyter Notebooks (and even more if we decide to use MongoDB), is to give a try on Apache-Spark.
+    ``Apache Spark™ is a fast and general engine for large-scale data processing'' \cite{website:spark.apache.org}.
+    We think it's a better option because it can be combined with different languages and tools, for instance there are free courses and references to combine Apache-Spark with MongoDB and Jupyter Notebooks in their own official websites.
+
+    \begin{figure}[H]
+      \centering
+      \includegraphics[width=1 \textwidth]{{{"/home/cj/Pictures/Screenshot from 2017-06-20 14-22-34"}}}
+    \end{figure}
+
+    \begin{figure}[H]
+      \centering
+      \includegraphics[width=1 \textwidth]{{{"/home/cj/Pictures/Screenshot from 2017-06-20 14-24-59"}}}
+    \end{figure}
+
+  \end{description}
+
+
+% ------------------------------------------------------------------------------
+\newpage
+\section{Conclusions}
+  The idea with this project was essentially create some visualizations by using the selected data source from the Stanford Large Network Dataset Collection. As I have been working with Python in the last months, I decided to make use of this project to learn some of the most useful libraries and tools for data analysis in this language, this tools are Pandas, Seaborn, Mpld3 and of course the Jupyter Notebook.
+
+  Even when learning new tools can take you a lot of time, I am happy that I did it this way, now I have a broader idea about how useful the data analysis can be, and specially how valuable an interactive data visualization can be when analyzing a dataset.
+
+  I must say I wish I had a few more time to include also in this project the analysis of the users dataset from the same stackoverflow collaboration network, I even downloaded and extracted the dataset but filtering and analyzing the data takes a considerable amount of time.
+
+  \begin{figure}[H]
+    \centering
+    \includegraphics[width=1 \textwidth]{{{"/home/cj/Pictures/Screenshot from 2017-06-20 15-27-30"}}}
+  \end{figure}
+
+  It would be interesting mixing the data from both datasets and get some noteworthy extra information.
+
+  Finally I would like to mention another interesting feature about Jupyter Notebooks and it is the capacity of sharing the notebooks online by using the Jupyter Notebook Viewer, ``the nbviewer is a simple way to share Jupyter Notebooks'' \cite{website:nbviewer.jupyter.org}.
+% ------------------------------------------------------------------------------
+\newpage
+\bibliographystyle{unsrt}   %unsrt by appearance
+% Create also a file in this folder called "references.bib" and can paste the latex info as Wikipedia use them in "Cite this page" section.
+\bibliography{references}
+% ------------------------------------------------------------------------------
+\end{thebibliography}
+\end{document}

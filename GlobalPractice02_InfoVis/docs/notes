@@ -19,5 +19,21 @@ And here there is a Python tool based on vega-lite grammar called Altair
     https://en.wikipedia.org/wiki/Charles_Joseph_Minard
 
 *The topic could be something related to science like human developments, astrophysics, music, etc.
+    -Another option could be twitter data about messages showing word-strength (good or bad words) in different times of the year and if possible, for different countries in the world.
 
-  
+*Consider this free-courses:
+    https://www.udacity.com/course/intro-to-data-analysis--ud170
+        You'll also learn how to use the Python libraries NumPy, Pandas, and Matplotlib to write code that's cleaner, more concise, and runs faster.
+    https://www.udacity.com/course/intro-to-data-science--ud359
+    https://www.udacity.com/course/data-visualization-in-tableau--ud1006
+    https://www.udacity.com/course/data-visualization-and-d3js--ud507
+
+*Consider using Hadoop along with Python libraries like this:
+    http://www.michael-noll.com/tutorials/writing-an-hadoop-mapreduce-program-in-python/
+    https://www.udacity.com/course/intro-to-hadoop-and-mapreduce--ud617
+    
+
+*Consider shape data using MongoDB
+    https://www.udacity.com/course/data-wrangling-with-mongodb--ud032
+    
+*Consider the higgs boson article
