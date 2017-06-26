@@ -7,8 +7,16 @@
 \usepackage{float}
 \usepackage[pdftex]{graphicx}
 \usepackage{url}
-\usepackage{listings}               % Code type bash
-\usepackage{subfig}                 % Images in a row
+\usepackage{listings}               % code type bash
+\usepackage{subfig}                 % images in a row
+\usepackage{hyperref}               % use links in the table of contents
+\hypersetup{
+    colorlinks,
+    citecolor=green,
+    filecolor=yellow,
+    linkcolor=blue,
+    urlcolor=red
+}
 
 \title{VIS - Lab Exercise 3 \\ \bigskip Analysis of an infographic}
 \author{\\ Carlos García}
@@ -18,28 +26,140 @@
 \maketitle \newpage \tableofcontents \newpage
 % ------------------------------------------------------------------------------
 \section{Project description}
-The goal of this activity is to study an infographic and analyze its design and characteristics.
-You need to deliver a written document with the analysis that has to include the following 4
-points:
-\begin{enumerate}
-  \item A general description of the infographic, explaining its context and where it has been taken from.
-  \item An analysis of all the resources used in the infographic (line bars, pie charts, ...), what data are they representing, and what message do they want to communicate.
-  \item A detailed analysis of the application of Tufte’s principles in the infographic. In the cases where there is a disagreement between a principle and the infographic, explain with detail what part of the infographic is incorrect, and how it should be fixed.
-  \item A list of improvements that you think can be made to increase the quality of the visualization.
-\end{enumerate}
+  The goal of this activity is to study an infographic and analyze its design and characteristics.
+  You need to deliver a written document with the analysis that has to include the following 4
+  points:
+  \begin{enumerate}
+    \item A general description of the infographic, explaining its context and where it has been taken from.
+    \item An analysis of all the resources used in the infographic (line bars, pie charts, ...), what data are they representing, and what message do they want to communicate.
+    \item A detailed analysis of the application of Tufte’s principles in the infographic. In the cases where there is a disagreement between a principle and the infographic, explain with detail what part of the infographic is incorrect, and how it should be fixed.
+    \item A list of improvements that you think can be made to increase the quality of the visualization.
+  \end{enumerate}
+
 % ------------------------------------------------------------------------------
-\section{}
+\newpage
+\section{Selecting the info-graphics}
+  I was not sure if my infographic was too simple, then I decided analyzing two of them, just in case.
+  The first one I chose was a very popular one, it is even embedded in the lecture's slides, but I think it is so interesting and well explained that I wanted to give it a better look. It is called ``Charles Minard's map of Napoleon's disastrous Russian campaign of 1812'' and can be seen in the following image:
+
+  \begin{figure}[H]
+    \centering
+    \includegraphics[width=1\textwidth]{{{"../../images/Charles Minard's map of Napoleon's disastrous Russian campaign of 1812"}}} %not use extension
+    \caption{Charles Minard's map of Napoleon's disastrous Russian campaign of 1812.}
+    % \label{Fig:if_necessary}
+  \end{figure}
+
+  The main reason why I think it is interesting, is because the historical context of this battle, the importance of the French empire at that time (1812), and of course, the importance of the main character in this event, Napoleon Bonaparte.
+
+  The second infographic is about tourism in my born country, it includes official information from the main institution concerned with this area, this information is from 2012 and the infographic is called "Venezuela's tourism data 2012".
+
+  \begin{figure}[H]
+    \centering
+    \includegraphics[width=1\textwidth]{{{"../../images/Venezuela's turism data 2012"}}} %not use extension
+    \caption{Venezuela's tourism data 2012}
+    % \label{Fig:if_necessary}
+  \end{figure}
+
+  I selected this image because it holds information about one of the most important economic area in my country, then, it is the kind of data that I would like to be able to diagnose and even improve.
+
 % ------------------------------------------------------------------------------
-\section{}
+\newpage
+\section{Analizing the info-graphics}
+\subsection{Charles Minard's map of Napoleon's disastrous Russian campaign of 1812}
+  \begin{description}
+    \item[General description and context:] In this infographic, Charles Minard creates a map of Napoleon's disastrous Russian campaign of 1812. The image is very notable specially because the author struggle to represent six types of data in two dimensions, this types of data are:
+    \begin{itemize}
+      \item the number of Napoleon's troops
+      \item distance
+      \item temperature
+      \item the latitude and longitude
+      \item direction of travel
+      \item and location relative to specific dates
+    \end{itemize}
+    \item[Resources, data represented and message to communicate:] The resources used are line graphs, stacked area charts, maps, and a Sankey diagram to represent direction in motion. The data represented is that we have just mentioned separated in six types of variables, and the message to communicate is how unsuccessful this campaign was, and what variables could have influence in this huge number of casualties. It is known that the ``Grande Armée'' (name of the army) incurred the majority of its losses during the march to Moscow (summer and autumn), the starvation, desertion, typhus and suicide would cost the French Army more men than all the battles of the Russian invasion combined.
+    \item[Tufte's principles:]Now we will analyze the infographic from the perspective of each Tufte's principle:
+    \begin{itemize}
+      \item \textbf{Show the real data:} This principle is accomplished, because Charles Minard is thought to obtain this data from books written by people who personally participated in the campaign or people having good knowledge in this event, this authors mentioned are likely to be the following: Adolphe Thiers (1797-1877), Count Philippe-Paul de Ségur (1753-1830), Raimond Emery Philippe Joseph, duc de Montesquiou-Fezensac (1784-1867), Georges, marquis de Chambray (1783-1848), and finally, Pierre-Irénée Jacob (1782-1855).
+      \item \textbf{Make the user think about the contents of the visualization:}
+        % Make the user think about the contents of the visualization, and not in the methodology, the graphic design, the image production or other superficial stuff
+        In this infographic you can only think about the data and the contents of the visualization, because the entire graph is just that, only some few lines are used in the borders or to make a connection between two different pieces of information.
+      \item \textbf{Present the data appropriately (do not exclude important information):} Of course in this case is almost impossible to represent all the data from the trip, but the one he is showing is very powerful and convincing to prove his point.
+      \item \textbf{Show a lot of information in a reduced space:} He is showing six data types and a bunch of information in just a small 2-dimensional chart, this is a remarkable accomplishment.
+      \item \textbf{Guide the user to compare the data:} He is trying to make the user to compare several variables, but probably the one he is trying to focus the attention on, is in how significant it is the reduction in men numbers all over the way from the beginning until the return to the starting point.
+      \item \textbf{Show the data at different scales:} He is using different scales for different variables, of course it could include some special segment with a zoom for an important part, but in this case he is giving more importance to size reduction, this way the amount of data represented is bigger.
+      \item \textbf{Integrate the visualization with the corresponding explanation and in the appropriate context:} There is and excellent context given at the beginning of the chart, this includes all the information needed to interpret and understand the plot.
+      \item \textbf{Give coherence to the visualization:} At first glance, this infographic looks q bit chaotic and hard to understand, but actually it has a lot of coherence, once you read all the context information and the explanatory tips.
+    \end{itemize}
+
+    \item[Data-ink ratio:] The data-ink ratio in this infographic is high, which is good, because it means that most of the ink used to plot the graph is used to show information. The rest is only some few lines for the scales or to link two different values to specific dates.
+        % Proportion between the ink that is actually used to show information versus the total ink used in the visualization.
+    \item[Gestalt principles:] All Gestalt principles are well applied in this chart, starting from proximity, similarity and grouping, all this used by maintaining the same colors and shapes through the diagram, this way the observer knows the difference between one route going towards Moscow and the other one returning.
+    Additionally, the continuity and closure are represented by joining the end of one route with the beginning of the other, this way the observer knows that one happens right after the other.
+    \item[Possible improvements:]
+      There are no much things to improve in this chart, anyway, maybe if some one wants to include some extra information we can suggest the following ones:
+      \begin{itemize}
+        \item Include some remarks to highlight the difference in values for important measures, for instance, we can include a reference in the difference amount comparing the beginning number of troops in oppose to the end number.
+        \item Include information about the terrain heights all over the way of this campaign, this could be useful to have an idea of how tired the troops could be during the journey.
+        \item Add some zoom squares in order to highlight some important pieces of the information, for instance it could be useful adding a zoom at the beginning-end point of the campaign, and also at the middle-way (in Moscow).
+      \end{itemize}
+    \item[Final overview:]We can say that this an excellent infographic, some enthusiast people in the web even consider it the best infograph ever, but of course it is something hard to prove.
+  \end{description}
+% ---------------------------------
+\newpage
+% ********************************************************************************************************
+\subsection{Venezuela's tourism data 2012}
+  \begin{description}
+    \item[General description and context:] In this infographic, we can appreciate some data about tourism indicators in Venezuela, this infographic was published by the ``Ministerio del poder popular para el turismo'' and shows different values concerning tourism in this country by the year 2012. In this case, the different variables represented are:
+    \begin{itemize}
+      \item Type of transport (aerial, maritime or terrestrial)
+      \item Type of tourist (national or international)
+      \item Name of the cities
+      \item Country regions (represented by grouped cities)
+      \item An idea of the weather or landscapes in every region
+      \item Number of tourist for each of the cases
+    \end{itemize}
+    \item[Resources, data represented and message to communicate:] The resources used for this infographic are a ring chart and a variation of a pie chart, where the size is represented not by the percentage of the circular area, but by increasing or decreasing the dimensions of each piece in the pie. The data is that we have just mentioned in the description, and the message seems to be just an informative chart to show the final numbers at the end of that year, but probably it also expects to promote the tourism for the next one.
+    \item[Tufte's principles:]Now we will analyze the infographic from the perspective of each Tufte's principle:
+    \begin{itemize}
+      \item \textbf{Show the real data:} This principle is accomplished, because this data is published by an official institution.
+      \item \textbf{Make the user think about the contents of the visualization:}
+        % Make the user think about the contents of the visualization, and not in the methodology, the graphic design, the image production or other superficial stuff
+        For this principle there is a problem because the infographic includes several other images that, even when they are related to the data, it is not necessary to include them, specially if they will consist on big pictures (I am referring to the images of the plane, the bus, the ship, and the landscapes).
+      \item \textbf{Present the data appropriately (do not exclude important information):} The idea of this infographic is to promote the tourism in the country, an important missing information could be the activities that can be done in those localities, other important missing information is about the prices of common services as a tourist in those places.
+      \item \textbf{Show a lot of information in a reduced space:} They are using few information considering the size of the image, this is probably because they expect that most of the people read it quickly, but then they are losing the opportunity to show more relevant data.
+      \item \textbf{Guide the user to compare the data:} This principle is accomplished, because most of the users will tend to compare the information according to places, transport means and nationality.
+      \item \textbf{Show the data at different scales:} This principle is not used in this infographic, the data is only showed in one scale.
+      \item \textbf{Integrate the visualization with the corresponding explanation and in the appropriate context:} In this case the data is self explanatory, is easy to understand the values integrated in the visualization, even though, some extra information could be also useful, as for example, an explanation of the purpose of the infographic.
+      \item \textbf{Give coherence to the visualization:} As the graphic only includes simple data, it is not hard to understand the logic or the coherence in the visualization.
+    \end{itemize}
+
+    \item[Data-ink ratio:] The data-ink ratio in this infographic is quite low, which is a bad symptom, because it means that most of the ink used to plot the graph is used to show some extra information different to the important data. Most of the ink is used in images and landscapes to make the graphic look prettier.
+        % Proportion between the ink that is actually used to show information versus the total ink used in the visualization.
+    \item[Gestalt principles:] The Gestalt principles are well applied specially to keep separation between national and international tourists, they also are applied to separate cities in regions, maybe they could be improved to relate the transport means with the destinations.
+    \item[Possible improvements:]
+      There are several things that can be done to improve this chart, here are some of them:
+      \begin{itemize}
+        \item Include some context explanation to communicate the purpose of the infographic.
+        \item Include information about the best times in the year to travel to specific places.
+        \item Include data about the prices expected in each city.
+        \item Include data about the different attractions existing in each city.
+        \item Include some remarks to highlight the difference in values for important measures, for instance the difference between the most important cities, or in comparison with the year before.
+        \item Include information about the weather in different cities.
+        \item Among others.
+      \end{itemize}
+    \item[Final overview:]We can say that this is kind of a poor infographic, too many things can be improved and it is hard to know what is the real message they are trying to transmit, if there is any.
+  \end{description}
+
 % ------------------------------------------------------------------------------
-\section{}
-% ------------------------------------------------------------------------------
-\begin{figure}[H]
-  \centering
-  \includegraphics[width=1\textwidth]{"/home/cj/Downloads/sample-image"} %not use extension
-  \caption{Caption \cite{alias}}
-  % \label{Fig:if_necessary}
-\end{figure}
+\newpage
+\section{Conclusion}
+% Final message about info-graphics and results
+  By comparing two different infographics it was easier to find the weakness in the second one, probably if I was only analyzed the second one, my conclusions about it would be different.
+  It is amazing how powerful an image can be, with this exercise I definitely get convinced about that popular statement saying that:
+
+  \bigskip
+
+  ``A GOOD PICTURE IS WORTH A THOUSAND WORDS''
 
 % ------------------------------------------------------------------------------
 \newpage

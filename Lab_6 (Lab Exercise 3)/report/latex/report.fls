@@ -1,10 +1,10 @@
-PWD /home/cj/Dropbox/Personal/Study/MasterURV/2nd_Semester/VIS/Lab_Sessions/Lab Exercise 3/report/latex
+PWD /home/cj/Dropbox/Personal/Study/MasterURV/2nd_Semester/VIS/Lab_Sessions_and_Practical_Work/Lab_6 (Lab Exercise 3)/report/latex
 INPUT /etc/texmf/web2c/texmf.cnf
 INPUT /usr/share/texmf/web2c/texmf.cnf
 INPUT /usr/share/texlive/texmf-dist/web2c/texmf.cnf
 INPUT /var/lib/texmf/web2c/pdftex/pdflatex.fmt
-INPUT /home/cj/Dropbox/Personal/Study/MasterURV/2nd_Semester/VIS/Lab_Sessions/Lab Exercise 3/report/latex/report.tex
-OUTPUT /home/cj/Dropbox/Personal/Study/MasterURV/2nd_Semester/VIS/Lab_Sessions/Lab Exercise 3/report/latex/report.log
+INPUT /home/cj/Dropbox/Personal/Study/MasterURV/2nd_Semester/VIS/Lab_Sessions_and_Practical_Work/Lab_6 (Lab Exercise 3)/report/latex/report.tex
+OUTPUT /home/cj/Dropbox/Personal/Study/MasterURV/2nd_Semester/VIS/Lab_Sessions_and_Practical_Work/Lab_6 (Lab Exercise 3)/report/latex/report.log
 INPUT /usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 INPUT /usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 INPUT /usr/share/texlive/texmf-dist/tex/latex/base/size10.clo
@@ -51,31 +51,54 @@ INPUT /usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
-INPUT /home/cj/Dropbox/Personal/Study/MasterURV/2nd_Semester/VIS/Lab_Sessions/Lab Exercise 3/report/latex/report.aux
-INPUT /home/cj/Dropbox/Personal/Study/MasterURV/2nd_Semester/VIS/Lab_Sessions/Lab Exercise 3/report/latex/report.aux
-OUTPUT /home/cj/Dropbox/Personal/Study/MasterURV/2nd_Semester/VIS/Lab_Sessions/Lab Exercise 3/report/latex/report.aux
+INPUT /usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
+INPUT /usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
+INPUT /usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
+INPUT /usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
+INPUT /usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
+INPUT /usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
+INPUT /usr/share/texlive/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+INPUT /usr/share/texlive/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/oberdiek/auxhook.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/oberdiek/auxhook.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
+INPUT /usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
+INPUT /usr/share/texlive/texmf-dist/tex/latex/latexconfig/hyperref.cfg
+INPUT /usr/share/texlive/texmf-dist/tex/latex/latexconfig/hyperref.cfg
+INPUT /usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
+INPUT /usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
+INPUT /usr/share/texlive/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
+INPUT /home/cj/Dropbox/Personal/Study/MasterURV/2nd_Semester/VIS/Lab_Sessions_and_Practical_Work/Lab_6 (Lab Exercise 3)/report/latex/report.aux
+INPUT /home/cj/Dropbox/Personal/Study/MasterURV/2nd_Semester/VIS/Lab_Sessions_and_Practical_Work/Lab_6 (Lab Exercise 3)/report/latex/report.aux
+OUTPUT /home/cj/Dropbox/Personal/Study/MasterURV/2nd_Semester/VIS/Lab_Sessions_and_Practical_Work/Lab_6 (Lab Exercise 3)/report/latex/report.aux
 INPUT /usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 INPUT /usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
-INPUT /usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifluatex.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifluatex.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/oberdiek/etexcmds.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/oberdiek/etexcmds.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 INPUT /usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/color.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/color.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/latexconfig/color.cfg
+INPUT /usr/share/texlive/texmf-dist/tex/latex/latexconfig/color.cfg
+INPUT /usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
+INPUT /usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
+INPUT /usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
+INPUT /home/cj/Dropbox/Personal/Study/MasterURV/2nd_Semester/VIS/Lab_Sessions_and_Practical_Work/Lab_6 (Lab Exercise 3)/report/latex/report.out
+INPUT /home/cj/Dropbox/Personal/Study/MasterURV/2nd_Semester/VIS/Lab_Sessions_and_Practical_Work/Lab_6 (Lab Exercise 3)/report/latex/report.out
+INPUT /home/cj/Dropbox/Personal/Study/MasterURV/2nd_Semester/VIS/Lab_Sessions_and_Practical_Work/Lab_6 (Lab Exercise 3)/report/latex/report.out
+INPUT /home/cj/Dropbox/Personal/Study/MasterURV/2nd_Semester/VIS/Lab_Sessions_and_Practical_Work/Lab_6 (Lab Exercise 3)/report/latex/report.out
+OUTPUT /home/cj/Dropbox/Personal/Study/MasterURV/2nd_Semester/VIS/Lab_Sessions_and_Practical_Work/Lab_6 (Lab Exercise 3)/report/latex/report.pdf
+INPUT /home/cj/Dropbox/Personal/Study/MasterURV/2nd_Semester/VIS/Lab_Sessions_and_Practical_Work/Lab_6 (Lab Exercise 3)/report/latex/report.out
+INPUT /home/cj/Dropbox/Personal/Study/MasterURV/2nd_Semester/VIS/Lab_Sessions_and_Practical_Work/Lab_6 (Lab Exercise 3)/report/latex/report.out
+OUTPUT /home/cj/Dropbox/Personal/Study/MasterURV/2nd_Semester/VIS/Lab_Sessions_and_Practical_Work/Lab_6 (Lab Exercise 3)/report/latex/report.out
 INPUT /usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr17.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr12.tfm
@@ -87,17 +110,28 @@ INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmmi6.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmsy8.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmsy6.tfm
-OUTPUT /home/cj/Dropbox/Personal/Study/MasterURV/2nd_Semester/VIS/Lab_Sessions/Lab Exercise 3/report/latex/report.pdf
 INPUT /var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr12.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
-INPUT /home/cj/Dropbox/Personal/Study/MasterURV/2nd_Semester/VIS/Lab_Sessions/Lab Exercise 3/report/latex/report.toc
-INPUT /home/cj/Dropbox/Personal/Study/MasterURV/2nd_Semester/VIS/Lab_Sessions/Lab Exercise 3/report/latex/report.toc
+INPUT /home/cj/Dropbox/Personal/Study/MasterURV/2nd_Semester/VIS/Lab_Sessions_and_Practical_Work/Lab_6 (Lab Exercise 3)/report/latex/report.toc
+INPUT /home/cj/Dropbox/Personal/Study/MasterURV/2nd_Semester/VIS/Lab_Sessions_and_Practical_Work/Lab_6 (Lab Exercise 3)/report/latex/report.toc
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm
-OUTPUT /home/cj/Dropbox/Personal/Study/MasterURV/2nd_Semester/VIS/Lab_Sessions/Lab Exercise 3/report/latex/report.toc
-INPUT /home/cj/Dropbox/Personal/Study/MasterURV/2nd_Semester/VIS/Lab_Sessions/Lab Exercise 3/report/latex/report.aux
+OUTPUT /home/cj/Dropbox/Personal/Study/MasterURV/2nd_Semester/VIS/Lab_Sessions_and_Practical_Work/Lab_6 (Lab Exercise 3)/report/latex/report.toc
+INPUT /home/cj/Dropbox/Personal/Study/MasterURV/2nd_Semester/VIS/Lab_Sessions_and_Practical_Work/Lab_6 (Lab Exercise 3)/report/latex/../../images/Charles Minard's map of Napoleon's disastrous Russian campaign of 1812.png
+INPUT ../../images/Charles Minard's map of Napoleon's disastrous Russian campaign of 1812.png
+INPUT ../../images/Charles Minard's map of Napoleon's disastrous Russian campaign of 1812.png
+INPUT /home/cj/Dropbox/Personal/Study/MasterURV/2nd_Semester/VIS/Lab_Sessions_and_Practical_Work/Lab_6 (Lab Exercise 3)/report/latex/../../images/Venezuela's turism data 2012.jpg
+INPUT ../../images/Venezuela's turism data 2012.jpg
+INPUT ../../images/Venezuela's turism data 2012.jpg
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
+INPUT /usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
+INPUT /usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
+INPUT /home/cj/Dropbox/Personal/Study/MasterURV/2nd_Semester/VIS/Lab_Sessions_and_Practical_Work/Lab_6 (Lab Exercise 3)/report/latex/report.aux
+INPUT /home/cj/Dropbox/Personal/Study/MasterURV/2nd_Semester/VIS/Lab_Sessions_and_Practical_Work/Lab_6 (Lab Exercise 3)/report/latex/report.out
+INPUT /home/cj/Dropbox/Personal/Study/MasterURV/2nd_Semester/VIS/Lab_Sessions_and_Practical_Work/Lab_6 (Lab Exercise 3)/report/latex/report.out
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb
+INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb

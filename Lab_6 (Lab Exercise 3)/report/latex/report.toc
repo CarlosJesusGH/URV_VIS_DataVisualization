@@ -1,4 +1,6 @@
-\contentsline {section}{\numberline {1}Project description}{3}
-\contentsline {section}{\numberline {2}}{3}
-\contentsline {section}{\numberline {3}}{3}
-\contentsline {section}{\numberline {4}}{3}
+\contentsline {section}{\numberline {1}Project description}{3}{section.1}
+\contentsline {section}{\numberline {2}Selecting the info-graphics}{4}{section.2}
+\contentsline {section}{\numberline {3}Analizing the info-graphics}{6}{section.3}
+\contentsline {subsection}{\numberline {3.1}Charles Minard's map of Napoleon's disastrous Russian campaign of 1812}{6}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Venezuela's tourism data 2012}{9}{subsection.3.2}
+\contentsline {section}{\numberline {4}Conclusion}{11}{section.4}
